@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "AS_OF_DT"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "AS_OF_DTGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( as_of_dt, "AS_OF_DT", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "AS_OF_DT", drools.getRule().getName());
+
+end
+
+

@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "NO_ID"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "NO_IDGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( no_id, "NO_ID", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "NO_ID", drools.getRule().getName());
+
+end
+
+

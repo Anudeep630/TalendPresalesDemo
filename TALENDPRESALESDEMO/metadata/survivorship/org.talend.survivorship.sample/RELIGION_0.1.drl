@@ -1,0 +1,14 @@
+package org.talend.survivorship.sample 
+
+rule "RELIGION"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "RELIGIONGroup"
+when
+    $input : RecordIn( dataset.isMostCommon( religion, "RELIGION", false) )  
+then
+    dataset.survive( $input.TALEND_INTERNAL_ID, "AS_OF_DT", drools.getRule().getName());
+
+end
+
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='190' id='1' V190='11' inStruct='Structures/Pre_sales/inputcsv.xml' outStruct='Structures/Pre_sales/payload.xml' inputRep='183' outputRep='177' nextMap='' inputStructUserName='inputcsv' outputStructUserName='payload' V1='4' name='Customer_Map' incarnation='1302'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='162' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='csv'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='62' V200='8' input='true' rowElem='true' structElemExists='true' usedCount='130' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='row'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='65' V200='8' input='true' structElemExists='true' usedCount='9' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Mobile_number'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='66' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Email'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='67' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='External_ID'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='68' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Name'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='69' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Age'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='70' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Gender'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='71' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Date_of_Birth'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='72' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Registration_date'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='73' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Store_code'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='74' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Nationality'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='75' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Preferred_Language'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='76' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Country_Of_Residence'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='77' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Marital_Status'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='78' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='Preferred_Channel'>
+        <mapNode t='190' idref='1'/>
+        <delimTerminator>,</delimTerminator>
+      </child>
+      <child t='200' id='79' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='Builtin:Structures/Representation Handlers/OptionalQuotes.xml' visible='true' inheritsFrom='' V281='13' V1='4' name='LoyaltyType'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='80' V200='8' input='true' structElemExists='true' V283='2' occurMaxTimes='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='__osdtTerminator'>
+        <mapNode t='190' idref='1'/>
+        <delimInitiator>\n</delimInitiator>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='22' V200='8' structElemExists='true' usedCount='173' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='Root'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop(in$/csv,{Filter},{Sort Keys},NestedContext(SimpleLoop(in$/csv/row,{Filter},{Sort Keys},{Contexts})))</loop>
+    <child t='200' id='23' V200='8' structElemExists='true' usedCount='16' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='mobile_number'>
+      <mapNode t='190' idref='1'/>
+      <value>Java([className="Demo_Util",methodName="formatMobile"],Concat(in$/csv/row/Mobile_number))</value>
+    </child>
+    <child t='200' id='24' V200='8' structElemExists='true' usedCount='14' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='email'>
+      <mapNode t='190' idref='1'/>
+      <value>IfThenElse(Equal(Java([className="Demo_Util",methodName="checkEmailformat"],Concat(in$/csv/row/Email)),Constant([value="true",dataType="1"],)),in$/csv/row/Email,Constant([value="",dataType="2"],))</value>
+    </child>
+    <child t='200' id='25' V200='8' structElemExists='true' usedCount='14' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='external_id'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/External_ID</value>
+    </child>
+    <child t='200' id='26' V200='8' structElemExists='true' usedCount='14' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='name'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/Name</value>
+    </child>
+    <child t='200' id='27' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='age'>
+      <mapNode t='190' idref='1'/>
+      <value>IfThenElse(Equal(Java([className="Demo_Util",methodName="ageCheck"],Concat(in$/csv/row/Age)),Constant([value="true",dataType="1"],)),in$/csv/row/Age,Constant([value="0",dataType="2"],))</value>
+    </child>
+    <child t='200' id='28' V200='8' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='gender'>
+      <mapNode t='190' idref='1'/>
+      <value>Java([className="Demo_Util",methodName="getGender"],Concat(in$/csv/row/Gender))</value>
+    </child>
+    <child t='200' id='29' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='dob'>
+      <mapNode t='190' idref='1'/>
+      <value>Java([className="Demo_Util",methodName="getDOBDateFormat"],Concat(in$/csv/row/Date_of_Birth))</value>
+    </child>
+    <child t='200' id='30' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='regdate'>
+      <mapNode t='190' idref='1'/>
+      <value>Java([className="Demo_Util",methodName="getRegDateFormat"],Concat(in$/csv/row/Registration_date))</value>
+    </child>
+    <child t='200' id='31' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='store_code'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/Store_code</value>
+    </child>
+    <child t='200' id='32' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='nationality'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/Nationality</value>
+    </child>
+    <child t='200' id='33' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='pref_language'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/Preferred_Language</value>
+    </child>
+    <child t='200' id='34' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='country_residence'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/Country_Of_Residence</value>
+    </child>
+    <child t='200' id='35' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='marital_status'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/Marital_Status</value>
+    </child>
+    <child t='200' id='36' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='pref_channel'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/Preferred_Channel</value>
+    </child>
+    <child t='200' id='37' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='loyalty_type'>
+      <mapNode t='190' idref='1'/>
+      <value>in$/csv/row/LoyaltyType</value>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='706' id='81' V706='1' skipHeaderReading='true' defaultHeader='Col' delimiter=',' quoteCharacter='"' quoteMode='4' ignoreEmptyLines='true' newLineType='2' newLine='&#xD;&#xA;' V690='1' encoding='UTF-8'>
+  </inputRepRuntime>
+  <outputRepRuntime t='697' id='82' V697='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
+  <valueSets></valueSets>
+  <inputXmlRepRuntime t='692' id='83' V692='1' V690='1'>
+  </inputXmlRepRuntime>
+  <outputXmlRepRuntime t='692' id='84' V692='1' V690='1'>
+  </outputXmlRepRuntime>
+  <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='42' V166='5' docType='1' docReposPath='/LOCAL_PROJECT/Sample Data/Pre_sales/input/input' V1='4' name='in$/csv'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='43' V166='5' docType='2' docReposPath='/LOCAL_PROJECT/Sample Data/Pre_sales/payload/payload' V1='4' name='out$/Root'>
+      <elemNode t='200' idref='22'/>
+    </child>
+  </child>
+  <child t='201' id='3' V1='4' name='Inherits From'>
+  </child>
+</root>

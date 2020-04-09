@@ -10,6 +10,20 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/Pre_Sales_ESB_Demo/customer_onsumer_api_0.1</module>
+    <module>jobs/process/DQ_POC/Match_Merge/mj_unmerge_records_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Extraction/tdqreportrun_0.1</module>
+    <module>jobs/process/DQ_POC/Match_Merge/customer_match_merge_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Extraction/load_data_s3_mysql_0.1</module>
+    <module>jobs/routes/Pre_Sales_ESB_Demo/customer_consumer_api_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Extraction/Archive/mj_extract_data_from_source_0.1</module>
+    <module>jobs/routes/Pre_Sales_ESB_Demo/target_api_producer_0.1</module>
+    <module>jobs/process/Pre_Sales_ESB_Demo/target_api_producer_job_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Extraction/get_file_s3_local_folder_0.1</module>
+    <module>jobs/process/DQ_POC/Match_Merge/Archieve/mj_match_merge_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Cleansing/Archive/mj_customer_standardize_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Cleansing/customer_standardize_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Extraction/customer_dataquality_report_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
