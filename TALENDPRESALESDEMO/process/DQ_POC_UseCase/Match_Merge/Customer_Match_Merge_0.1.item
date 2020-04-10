@@ -470,7 +470,7 @@
       <column comment="" key="false" length="255" name="GID" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="!row2.NAME.equals(&quot; &quot;) " name="load_uniques" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.NAME " name="NAME" type="id_String"/>
@@ -670,28 +670,28 @@
       <elementValue elementRef="INPUT_COLUMN" value="MOTHER_S_NAME"/>
       <elementValue elementRef="FUNCTION" value="Longest"/>
       <elementValue elementRef="VALUE" value="&quot;&quot;"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="MOTHER_S_NAME"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
       <elementValue elementRef="RELATION" value="SEQ"/>
       <elementValue elementRef="RULE_NAME" value="&quot;PLACE_OF_BIRTH&quot;"/>
       <elementValue elementRef="INPUT_COLUMN" value="PLACE_OF_BIRTH"/>
       <elementValue elementRef="FUNCTION" value="Longest"/>
       <elementValue elementRef="VALUE" value="&quot;&quot;"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="PLACE_OF_BIRTH"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
       <elementValue elementRef="RELATION" value="SEQ"/>
       <elementValue elementRef="RULE_NAME" value="&quot;BIRTHDATE&quot;"/>
       <elementValue elementRef="INPUT_COLUMN" value="BIRTHDATE"/>
       <elementValue elementRef="FUNCTION" value="MostCommon"/>
       <elementValue elementRef="VALUE" value="&quot;&quot;"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="BIRTHDATE"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
       <elementValue elementRef="RELATION" value="SEQ"/>
       <elementValue elementRef="RULE_NAME" value="&quot;STREET&quot;"/>
       <elementValue elementRef="INPUT_COLUMN" value="STREET"/>
       <elementValue elementRef="FUNCTION" value="MostCommon"/>
       <elementValue elementRef="VALUE" value="&quot;&quot;"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="STREET"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
       <elementValue elementRef="RELATION" value="SEQ"/>
       <elementValue elementRef="RULE_NAME" value="&quot;HP&quot;"/>
@@ -712,32 +712,32 @@
       <elementValue elementRef="INPUT_COLUMN" value="RELIGION"/>
       <elementValue elementRef="FUNCTION" value="MostCommon"/>
       <elementValue elementRef="VALUE" value="&quot;&quot;"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="RELIGION"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
       <elementValue elementRef="RELATION" value="SEQ"/>
       <elementValue elementRef="RULE_NAME" value="&quot;NAME&quot;"/>
       <elementValue elementRef="INPUT_COLUMN" value="NAME"/>
       <elementValue elementRef="FUNCTION" value="Longest"/>
       <elementValue elementRef="VALUE" value="&quot;&quot;"/>
-      <elementValue elementRef="OUTPUT_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="NAME"/>
       <elementValue elementRef="IGNORE_NULL" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DEFINE_CONFLICT" value="false"/>
     <elementParameter field="TABLE" name="CONFLICT_TABLE" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="SURVIVOR_RELATION" name="drools" show="false" value="_j6GQAHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="CIF" show="false" value="_j6ZK8HTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="PLACE_OF_BIRTH" show="false" value="_j7vOwHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="AS_OF_DT" show="false" value="_j8CJsHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="RELIGION" show="false" value="_j8LToHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="MOTHER'SNAME" show="false" value="_j8VEoHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="BRANCH_CD" show="false" value="_j8n_kHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="HP" show="false" value="_j8xwkHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="NO_ID" show="false" value="_j866gHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="BIRTHDATE" show="false" value="_j9OcgHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="STREET" show="false" value="_j9hXcHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="NAME" show="false" value="_j9rIcHTJEeqtjawZpzABnw"/>
-    <elementParameter field="SURVIVOR_RELATION" name="SurvivorFlow" show="false" value="_j9-qcHTJEeqtjawZpzABnw"/>
+    <elementParameter field="SURVIVOR_RELATION" name="drools" show="false" value="_sHw04HszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="CIF" show="false" value="_sIEW4HszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="PLACE_OF_BIRTH" show="false" value="_sIXR0HszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="AS_OF_DT" show="false" value="_sIgbwHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="RELIGION" show="false" value="_sIz9wHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="MOTHER'SNAME" show="false" value="_sI9HsHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="BRANCH_CD" show="false" value="_sJG4tnszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="HP" show="false" value="_sJaasHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="NO_ID" show="false" value="_sJjkoHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="BIRTHDATE" show="false" value="_sJ2fkHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="STREET" show="false" value="_sKAQkHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="NAME" show="false" value="_sKKBkHszEeqCeJw2c1iDRA"/>
+    <elementParameter field="SURVIVOR_RELATION" name="SurvivorFlow" show="false" value="_sKTLgHszEeqCeJw2c1iDRA"/>
     <metadata connector="FLOW" label="CIF_NAME_NULL_CHECK" name="tRuleSurvivorship_1">
       <column comment="" key="false" length="8" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -802,7 +802,7 @@
       <column key="false" length="0" name="GID" nullable="true" originalLength="255" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="row7.SURVIVOR ==true" name="Surviour_True" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row7.NAME " name="NAME" nullable="true" type="id_String"/>
@@ -1420,7 +1420,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Steward"/>
   </connection>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -1433,7 +1433,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -1448,13 +1448,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_727ff509-1746-474c-9e21-ec68d7cb8e8e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>osuoxsJbMpRggq1vRadyBG640C5P91SR+Lgv8Xej0GHTak/+GG7dlwNKXAOOkwmslcjNI2dvAAAq
-StAxidKWrA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6fd149fc-da12-452a-83f8-571de98f165c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GXcfR+/2k33Q+icS1A9h5GTKnhGClfbV2cMKYmHSmRsiyUQdmJkdd+aXp9z8nLCOIq74qTnfJqqa
-cjJW5xN1xA==</DigestValue></Reference></SignedInfo><SignatureValue>fbRM1fmishkj2MXd+Ys4/KHRW5q8UqsxgTcwxhK7BFDEtejZg6Fc+WhWSToL16gzX11rKqZeAEvB
-10ID+qVxU286AEU8b4VyRDeViNksE8FN4gTRgqV/nQfBZGlzjia6ms9ScThrEbTJOkYP4cQak1YM
-mIbsdDuRlBDY80tphTnMFIIAvhxrJBLQMyAa6b09+wPdzdel9yTjgnXP9tKjj9s0PH5Ep6uZ0MbG
-NjIHKobq6p2JpG7EtUPdrxbfW/2yovB7uD4Vn/a7eFJkqy45m29+cry9DtOfPQKZoCP7IVYZsT76
-mzDTCjgjA6UUNIcSISwVpQb+JXZZZ2rC4dIpQw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cd078c3d-2926-45aa-8e0e-ac0f7026efea"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QTtv3LAuoyV3dEFh2hAhXhrW5PPgNMP1oI6CdXkwYopmWnXcHjOJugxawHlolO9DEZi576ZIcJTE
+y28OowPogQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ab33078d-8289-4644-bcd3-6621f0570c63"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VAaWz+i2c9g/qUlMJ5LAFGTOnPsr3x59PJyjpeHzl+cQQpdEh5ReoSAbcY1Wek+etmJiNbzxDh22
+SyyYxgx7bg==</DigestValue></Reference></SignedInfo><SignatureValue>bB6JOEVXcjPOQrRI/GEySZ+wEDHufjkXNzsTjBQFiqErpL0YJnPTJTQzp5qtwbcwUWHLaeUr1BUE
+Z5xoC4JQpTmtHsKUI0y6TMajKh8M6RhV/F6kMp+i3DFKeCZ0GRSrzobbAIyR13higOOQvHaI32yH
+L+P8Rog6+5LeCepx/vCpHwcrbewbShphN/mW7LfHWF9vdS5F2AJnWrjc190D6I1//ctuRecBGutt
+eC9zL075lFlsCpYxXKnLXwMwWF5HB31O+pg3UksaI8t/9+dY4asn+/lpvdapo0zSf4BOAvw4ay0K
+zdMtIOhIsF02zNioCyziLNAmQlT64M2Usp+X9g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1476,4 +1476,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6fd149fc-da12-452a-83f8-571de98f165c" Target="#_727ff509-1746-474c-9e21-ec68d7cb8e8e"><Timestamp>2020-04-10 14:00:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ab33078d-8289-4644-bcd3-6621f0570c63" Target="#_cd078c3d-2926-45aa-8e0e-ac0f7026efea"><Timestamp>2020-04-10 14:01:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
