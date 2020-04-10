@@ -134,12 +134,22 @@
     </dependency>
     <dependency>
       <groupId>org.example.talendpresalesdemo.job</groupId>
-      <artifactId>Load_Data_S3_MySql</artifactId>
+      <artifactId>Load_Data_S3_MySql_EXCEL</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.talendpresalesdemo.job</groupId>
+      <artifactId>Load_Data_S3_MySql_JSON</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
       <groupId>org.example.talendpresalesdemo.job</groupId>
       <artifactId>tdqReportRun</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.talendpresalesdemo.job</groupId>
+      <artifactId>Load_Data_S3_MySql_CSV</artifactId>
       <version>0.1.0</version>
     </dependency>
   </dependencies>
