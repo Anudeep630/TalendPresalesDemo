@@ -55,6 +55,27 @@
   <build>
     <plugins>
       <plugin>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>2.5.1</version>
+        <executions>
+          <execution>
+            <id>install-jar-lib-0</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <configuration>
+              <groupId>org.example.talendpresalesdemo.job</groupId>
+              <artifactId>de_Target_API_Producer_Job</artifactId>
+              <version>0.1.0</version>
+              <packaging>jar</packaging>
+              <file>../../../process/Pre_Sales_ESB_Demo/target_api_producer_job_0.1/target/Target_API_Producer_Job-bundle-0.1.0.jar</file>
+              <generatePom>true</generatePom>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.apache.karaf.tooling</groupId>
         <artifactId>features-maven-plugin</artifactId>
         <version>2.2.9</version>
@@ -139,6 +160,22 @@
                   <version>0.1.0</version>
                   <classifier>features</classifier>
                   <packaging>xml</packaging>
+                  <repositoryId>${project.distributionManagement.repository.id}</repositoryId>
+                  <url>${project.distributionManagement.repository.url}</url>
+                </configuration>
+              </execution>
+              <execution>
+                <id>deploy-de_Target_API_Producer_Job</id>
+                <phase>deploy</phase>
+                <goals>
+                  <goal>deploy-file</goal>
+                </goals>
+                <configuration>
+                  <file>../../../process/Pre_Sales_ESB_Demo/target_api_producer_job_0.1/target/target_api_producer_job_0_1.jar</file>
+                  <groupId>org.example.talendpresalesdemo.job</groupId>
+                  <artifactId>de_Target_API_Producer_Job</artifactId>
+                  <version>0.1.0</version>
+                  <packaging>jar</packaging>
                   <repositoryId>${project.distributionManagement.repository.id}</repositoryId>
                   <url>${project.distributionManagement.repository.url}</url>
                 </configuration>
