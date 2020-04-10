@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.Customer-20200410-1533-00033.pdf</name>
+			<type>1</type>
+			<location>C:/Users/Administrator/Desktop/DQPOC/Output/DqReport/Customer-20200410-1533-00033.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>
