@@ -30,6 +30,7 @@
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/Archieve/mj_unmerge_records_0.1</module>
     <module>code/beans</module>
     <module>jobs/process/Pre_Sales_ESB_Demo/jira_consumer_api_0.1</module>
+    <module>jobs/routes/Pre_Sales_ESB_Demo/aa_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
