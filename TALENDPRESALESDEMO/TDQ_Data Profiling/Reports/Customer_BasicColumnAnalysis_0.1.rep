@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.reports="http://dataquality.reports" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_KRZ7kXJ5Eeq3TYS_f35c0g" name="Customer_BasicColumnAnalysis" creationDate="2020-03-30T16:55:29.412+0530" defaultContext="Default">
+  <clientDependency href="../Analyses/Customer_BasicColumnAnalysis_0.1.ana#_KRc-4HJ5Eeq3TYS_f35c0g"/>
+  <taggedValue xmi:id="_KRZ7knJ5Eeq3TYS_f35c0g" tag="OutputFolder" value="C:\Users\admin\Desktop\usecases\InternalPOC"/>
+  <taggedValue xmi:id="_KRZ7k3J5Eeq3TYS_f35c0g" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
+  <taggedValue xmi:id="_KRZ7lHJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_DBVERSION" value="MYSQL_5"/>
+  <taggedValue xmi:id="_KRZ7lXJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_HOST" value="localhost"/>
+  <taggedValue xmi:id="_KRZ7lnJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_PORT" value="3306"/>
+  <taggedValue xmi:id="_KRZ7l3J5Eeq3TYS_f35c0g" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_KRZ7mHJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_KRZ7mXJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_USER" value="root"/>
+  <taggedValue xmi:id="_KRZ7mnJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_PASSWORD" value="RX/CTwlUNiA="/>
+  <taggedValue xmi:id="_KRZ7m3J5Eeq3TYS_f35c0g" tag="REP_DBINFO_PARAMETER" value="characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_KRZ7nHJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_URL" value="jdbc:mysql://localhost:3306/talend_dq?characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_KRZ7nXJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
+  <taggedValue xmi:id="_KRZ7nnJ5Eeq3TYS_f35c0g" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
+  <taggedValue xmi:id="_KRZ7n3J5Eeq3TYS_f35c0g" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_KRZ7oHJ5Eeq3TYS_f35c0g" tag="Author" value="Test@test.com"/>
+  <taggedValue xmi:id="_O9hscHJ5Eeq3TYS_f35c0g" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_O9hscXJ5Eeq3TYS_f35c0g" tag="Description" value=""/>
+  <taggedValue xmi:id="_O9hscnJ5Eeq3TYS_f35c0g" tag="Status" value="production"/>
+  <taggedValue xmi:id="_O9iTgHJ5Eeq3TYS_f35c0g" tag="OutputFileName" value="Customer"/>
+  <taggedValue xmi:id="_O9iTgXJ5Eeq3TYS_f35c0g" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_O9iTgnJ5Eeq3TYS_f35c0g" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_O9iTg3J5Eeq3TYS_f35c0g" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_O9jho3J5Eeq3TYS_f35c0g" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
+  <presentationParams xmi:id="_O9iThHJ5Eeq3TYS_f35c0g" type="BOTTOM_RIGHT_PRESENTATIONKEY">
+    <formula xmi:id="_O9jhoHJ5Eeq3TYS_f35c0g">
+      <expression xsi:type="relational:TdExpression" xmi:id="_O9jhoXJ5Eeq3TYS_f35c0g" body=""/>
+    </formula>
+  </presentationParams>
+  <analysisMap xmi:id="_KRZ7oXJ5Eeq3TYS_f35c0g" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/Customer_BasicColumnAnalysis_0.1.ana#_3vpp4XJzEeq3TYS_f35c0g"/>
+  </analysisMap>
+  <ExecInformations xmi:id="_XHD_YHJ5Eeq3TYS_f35c0g" executionDate="2020-03-30T16:56:55.475+0530" executionDuration="99" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+  <context xmi:id="_O9jhonJ5Eeq3TYS_f35c0g" confirmationNeeded="false" name="Default"/>
+</dataquality.reports:TdReport>
