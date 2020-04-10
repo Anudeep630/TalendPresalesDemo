@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_PG4ioXsSEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" creationDate="2020-04-10T15:31:24.154+0530">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_PG4ioXsSEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" creationDate="2020-04-10T15:31:24.154+0530" logo="C:\Users\Administrator\Desktop\DQPOC\BackupJobs\arthalogo.jpg" defaultContext="Default">
   <clientDependency href="../Analyses/Customer_basic_Column_Analysis_0.1.ana#_PG4isnsSEeqCeJw2c1iDRA"/>
-  <taggedValue xmi:id="_PG4ionsSEeqCeJw2c1iDRA" tag="OutputFolder" value=""/>
-  <taggedValue xmi:id="_PG4io3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
-  <taggedValue xmi:id="_PG4ipHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBVERSION" value=""/>
-  <taggedValue xmi:id="_PG4ipXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_HOST" value=""/>
-  <taggedValue xmi:id="_PG4ipnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_PG4ionsSEeqCeJw2c1iDRA" tag="OutputFolder" value="C:\Users\Administrator\Desktop\DQPOC\Output\DqReport"/>
+  <taggedValue xmi:id="_PG4io3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
+  <taggedValue xmi:id="_PG4ipHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBVERSION" value="MYSQL_5"/>
+  <taggedValue xmi:id="_PG4ipXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_HOST" value="localhost"/>
+  <taggedValue xmi:id="_PG4ipnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_PORT" value="3306"/>
   <taggedValue xmi:id="_PG4ip3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
   <taggedValue xmi:id="_PG4iqHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_SCHEMA" value=""/>
-  <taggedValue xmi:id="_PG4iqXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_USER" value="sa"/>
-  <taggedValue xmi:id="_PG4iqnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
-  <taggedValue xmi:id="_PG4iq3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_PARAMETER" value=""/>
-  <taggedValue xmi:id="_PG4irHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\TalendCloudWorkspace\TDQ_reporting_db\talend_dq"/>
-  <taggedValue xmi:id="_PG4irXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
-  <taggedValue xmi:id="_PG4irnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_PG4iqXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_USER" value="root"/>
+  <taggedValue xmi:id="_PG4iqnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_PASSWORD" value="aJJSf25TI5E="/>
+  <taggedValue xmi:id="_PG4iq3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_PARAMETER" value="characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_PG4irHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_URL" value="jdbc:mysql://localhost:3306/talend_dq?characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_PG4irXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
+  <taggedValue xmi:id="_PG4irnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
   <taggedValue xmi:id="_PG4ir3sSEeqCeJw2c1iDRA" tag="REP_PASSWORD_CONTEXT" value="false"/>
   <taggedValue xmi:id="_PG4isHsSEeqCeJw2c1iDRA" tag="Author" value="palem.varun@nfrthinkartha.com"/>
+  <taggedValue xmi:id="_iELTEHsSEeqCeJw2c1iDRA" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_iELTEXsSEeqCeJw2c1iDRA" tag="Description" value=""/>
+  <taggedValue xmi:id="_iELTEnsSEeqCeJw2c1iDRA" tag="Status" value="development"/>
+  <taggedValue xmi:id="_iELTE3sSEeqCeJw2c1iDRA" tag="OutputFileName" value="Customer"/>
+  <taggedValue xmi:id="_iELTFHsSEeqCeJw2c1iDRA" tag="Single output" value="false"/>
+  <taggedValue xmi:id="_iELTFXsSEeqCeJw2c1iDRA" tag="OutputType" value="pdf"/>
+  <taggedValue xmi:id="_iELTFnsSEeqCeJw2c1iDRA" tag="REP_GENERATE_FILE" value="true"/>
+  <taggedValue xmi:id="_iELTGHsSEeqCeJw2c1iDRA" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
   <analysisMap xmi:id="_PG4isXsSEeqCeJw2c1iDRA" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/Customer_basic_Column_Analysis_0.1.ana#__eef0HsQEeqCeJw2c1iDRA"/>
   </analysisMap>
+  <context xmi:id="_iELTF3sSEeqCeJw2c1iDRA" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
