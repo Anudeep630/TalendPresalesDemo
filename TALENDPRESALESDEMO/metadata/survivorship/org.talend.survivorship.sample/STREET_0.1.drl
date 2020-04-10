@@ -7,7 +7,7 @@ rule "STREET"
 when
     $input : RecordIn( dataset.isMostCommon( street, "STREET", false) )  
 then
-    dataset.survive( $input.TALEND_INTERNAL_ID, "AS_OF_DT", drools.getRule().getName());
+    dataset.survive( $input.TALEND_INTERNAL_ID, "STREET", drools.getRule().getName());
 
 end
 

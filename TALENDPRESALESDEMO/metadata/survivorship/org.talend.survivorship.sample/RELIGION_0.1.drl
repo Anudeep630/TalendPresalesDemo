@@ -7,7 +7,7 @@ rule "RELIGION"
 when
     $input : RecordIn( dataset.isMostCommon( religion, "RELIGION", false) )  
 then
-    dataset.survive( $input.TALEND_INTERNAL_ID, "AS_OF_DT", drools.getRule().getName());
+    dataset.survive( $input.TALEND_INTERNAL_ID, "RELIGION", drools.getRule().getName());
 
 end
 

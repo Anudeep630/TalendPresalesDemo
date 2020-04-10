@@ -7,7 +7,7 @@ rule "NAME"
 when
     $input : RecordIn( dataset.isLongest( name, "NAME", false) )  
 then
-    dataset.survive( $input.TALEND_INTERNAL_ID, "AS_OF_DT", drools.getRule().getName());
+    dataset.survive( $input.TALEND_INTERNAL_ID, "NAME", drools.getRule().getName());
 
 end
 
