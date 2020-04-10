@@ -562,27 +562,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputJSON_1"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/DQPOC/Input/customer.json&quot;"/>
-    <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="true"/>
-    <elementParameter field="TEXT" name="DATABLOCKNAME" show="false" value="&quot;data&quot;"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Customer" name="tFileOutputJSON_1">
-      <column comment="" key="false" length="255" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="CIF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="BRANCH_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="RELIGION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="HP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="MOTHER_S_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NO_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tS3Connection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
@@ -608,10 +587,6 @@
   <connection connectorName="FLOW" label="Customer" lineStyle="0" metaname="Customer" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Customer"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tFileOutputJSON_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -668,13 +643,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7f8748a2-96a3-4fec-a9c5-d586789f6fc3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hcMF6cqvfzLhDsB7bbO+Vr5htSzlmVZ2xfiIf31uGcpmPBZXHQkCcsQuf3FsITIGXbmmaejEpRJG
-bE50vpU+0g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aa242af4-539e-4e07-8059-3d941abb68ac"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>w4nfLoFuVaCOPAYssDjs9WmTJVqI+wK8La1kUSsP3Pb7qZ+BJFYCodFd1yxuSusY9/QU7AavePgl
-hJV6w+2sMQ==</DigestValue></Reference></SignedInfo><SignatureValue>EOj/zwKdoX1VddmqV5hFxAybCbVt0gfb2xRdngQijV3LqAjm4GltVQITPQc+GLx3+2hikXLRaSdr
-UGb1inHJxXO/D69vZRT6zyE/CqZq8GENMnX8V6P7hGjXjp+n3zJvBkjXruz8xfozxwkR5TZEUyBS
-N/PJflM9iT8J289sSxeWDujPU9L6e+rvp2Dd6mDDnVQJ9W0tJF6JKyIvjVc7McB5AUYM2LhK6/8p
-+42QSl/6PZKRORV4D8XFtdQ+U/PSo7UYX6U2X6G0IRTGtFl2iwCFdDrLw0xCvWVJpIidlMj0CSIf
-WDTpyy9kCHk22whxJB+KI1gm4BEDM2g7tMnVNQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_70d4a941-159b-4f3a-85e1-652b11bd8bb9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vybTim84+GXL4Lo/mM0t0FRPEfJ+w4j3+119XcZ1+So2PZwPSkzEi6FJOCDJzXXnZSnC3Mt5R4nY
+oO2r2AreJw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_97ab9434-7a85-435d-b9f4-4242ec0415e7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JpPbkg3Hd1cxcPCFEAhVS5OQNPXwS90E/eeT/23AwpfJy2ipX0+5v88SXl6HhDd4mHvnHKJxeCLj
+nViWV2CuaQ==</DigestValue></Reference></SignedInfo><SignatureValue>b+H7uRwD5mmPa1r39CDXy/qO6DMPWCkljINI9eosjKtfVbZ2ATZL7QR+adwHo+ZGoqdkrIjffBge
+YuZmJ9Y3ZRUa8hxLHZDdUCTBfRY1+7JCqIpfpGSI4TAG3WZiiINnt4yrxSChW1GVPb7swxBzedEl
+0yg7QT/IN/5cgnLG2eLd0Q7RoxihCvlPUeohN2zBaI2P4c8QBApYcMKr4kya3Z/NodVJfPpeeEtA
+W92HxrsfUocoaVMZRh7kfzqzTA4drtDW6hmk6wOP1J0ON4IxyHQ2NqpzgOdb1EPv8tIH/zL85cOk
+dXIzLe0TNWPgfvaaOr3X1ksa3dgiInMJlsTpYg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -696,4 +671,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aa242af4-539e-4e07-8059-3d941abb68ac" Target="#_7f8748a2-96a3-4fec-a9c5-d586789f6fc3"><Timestamp>2020-04-10 10:38:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_97ab9434-7a85-435d-b9f4-4242ec0415e7" Target="#_70d4a941-159b-4f3a-85e1-652b11bd8bb9"><Timestamp>2020-04-10 10:38:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
