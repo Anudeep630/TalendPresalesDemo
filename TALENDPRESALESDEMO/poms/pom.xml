@@ -28,6 +28,7 @@
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/customer_match_merge_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/steward_to_master_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/Archieve/mj_unmerge_records_0.1</module>
+    <module>code/beans</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>

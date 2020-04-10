@@ -69,7 +69,7 @@
               <artifactId>Customer_Consumer_API_customer_onsumer_API</artifactId>
               <version>0.1.0</version>
               <packaging>jar</packaging>
-              <file>../../../process/Pre_Sales_ESB_Demo/customer_onsumer_api_0.1/target/customer_onsumer_api_0_1.jar</file>
+              <file>../../../process/Pre_Sales_ESB_Demo/customer_onsumer_api_0.1/target/customer_onsumer_API-bundle-0.1.0.jar</file>
               <generatePom>true</generatePom>
             </configuration>
           </execution>
