@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.analysis="http://dataquality.analysis" xmi:id="__eef0HsQEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" creationDate="2020-04-10T15:22:29.757+0530">
+  <taggedValue xmi:id="__eef0XsQEeqCeJw2c1iDRA" tag="Status" value="development"/>
+  <taggedValue xmi:id="__eef0nsQEeqCeJw2c1iDRA" tag="Author" value="palem.varun@nfrthinkartha.com"/>
+  <taggedValue xmi:id="__eef03sQEeqCeJw2c1iDRA" tag="Purpose"/>
+  <taggedValue xmi:id="__eef1HsQEeqCeJw2c1iDRA" tag="Description"/>
+  <taggedValue xmi:id="__eef1XsQEeqCeJw2c1iDRA" tag="Version" value="0.1"/>
+  <context xmi:id="__eef1nsQEeqCeJw2c1iDRA"/>
+  <results xmi:id="__eef13sQEeqCeJw2c1iDRA">
+    <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA"/>
+  </results>
+  <parameters xmi:id="__eef2XsQEeqCeJw2c1iDRA" analysisType="Multiple Column Analysis"/>
+</dataquality.analysis:Analysis>
