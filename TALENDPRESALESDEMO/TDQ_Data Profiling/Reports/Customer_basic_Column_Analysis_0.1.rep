@@ -27,5 +27,6 @@
   <analysisMap xmi:id="_PG4isXsSEeqCeJw2c1iDRA" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/Customer_basic_Column_Analysis_0.1.ana#__eef0HsQEeqCeJw2c1iDRA"/>
   </analysisMap>
+  <ExecInformations xmi:id="_iPtNoHsSEeqCeJw2c1iDRA" executionDate="2020-04-10T15:33:32.439+0530" executionDuration="163" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
   <context xmi:id="_iELTF3sSEeqCeJw2c1iDRA" confirmationNeeded="false" name="Default"/>
 </dataquality.reports:TdReport>
