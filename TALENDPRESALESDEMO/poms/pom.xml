@@ -24,7 +24,7 @@
     <module>jobs/process/DQ_POC/Data_Cleansing/Archive/mj_customer_standardize_0.1</module>
     <module>jobs/process/DQ_POC/Data_Cleansing/customer_standardize_0.1</module>
     <module>jobs/process/DQ_POC/Data_Extraction/customer_dataquality_report_0.1</module>
-    <module>jobs/process/DQ_POC/Data_Cleansing/Internal_demo/dataprep_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Cleansing/dataprep_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
