@@ -342,19 +342,15 @@
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "Demo_Util",
-    "version" : "Latest",
-    "type" : "routine"
-  }, {
     "id" : "DqStringHandling",
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "MDM",
+    "id" : "Jira_Util",
     "version" : "Latest",
     "type" : "routine"
   }, {
-    "id" : "MacomGlobalVarables",
+    "id" : "MDM",
     "version" : "Latest",
     "type" : "routine"
   }, {
@@ -393,10 +389,6 @@
     "id" : "TalendStringUtil",
     "version" : "Latest",
     "type" : "routine"
-  }, {
-    "id" : "_r_LBcDzpEeqwbo3yyWb65A - metadata",
-    "version" : "Latest",
-    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
