@@ -26,6 +26,7 @@
     <module>jobs/process/DQ_POC/Data_Extraction/customer_dataquality_report_0.1</module>
     <module>jobs/process/DQ_POC/Data_Cleansing/customer_datacleansing_dataprep_0.1</module>
     <module>jobs/process/DQ_POC/Match_Merge/steward_to_master_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Extraction/copy_of_load_data_s3_mysql_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
