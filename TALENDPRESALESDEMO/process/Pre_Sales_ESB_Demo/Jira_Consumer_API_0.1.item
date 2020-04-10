@@ -320,7 +320,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tExtractJSONFields_1">
       <column comment="" key="false" length="100" name="id" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="issue" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="issue" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="project" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="status" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="assignee" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -417,7 +417,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_2">
       <column comment="" key="false" length="100" name="id" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="issue" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="issue" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="project" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="status" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="assignee" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -426,7 +426,7 @@
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="100" name="id" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="500" name="issue" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="issue" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="project" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="status" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="assignee" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -562,13 +562,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_331f9696-849a-439e-8f57-b05bbca6fe50"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XZ/Sc1FyYMPU5HPOtnBTXudr3LXN/rXpX+Idi3MwNv9csfPTNQ2oRk4r8owE6w8zp6p3y361o++C
-RB4I6jcyXQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d8b04fe4-8a42-4517-bec3-8dd5464864e9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vP/3jrwsgs+wWt7OzfqfFKM2mPEnOvxD2kBrR0sru+xUvRW2RnpmKgi6NmYk9qOlPcCkCi3LLfg4
-mxIjmYwGgQ==</DigestValue></Reference></SignedInfo><SignatureValue>E1fI0GNUM/Yc9T7HFb/O9qQFUnAiW78fPvLwmlicKqZXwl5tSaKcqnngi6TLToHRsall1ZsKjAz3
-fZr54IlV3HDo2LwSVcsh/krCaNGIDzg+8CiwfHO/uyvdLuyt6gw8JVAMD87n06M99dkWWLhmqzpq
-7MFL54PIVTBMtkngLOxkrccP6SUUCZAuZQso01iE36JHkk0q+NfhnZYFwaMTaSSLjJNBNt+6Ix1B
-5UZvRCVChBpaU4AKz/zqZ7+TWSdKWkEf74D6krqdfb4kG/zmhf9zkDzxKpWM9AC+/2NtDgkRrcog
-FGiR40p9XHUI+A1z0o0ZTxvSrUOHIvDKxfbatw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4aa3366b-7f57-424a-bec9-9c974235466e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9uzL2oB9Fxw9FIbg0R4ZTWBu4WaX+cMHTfsuyMm07jYwQLnT4Oxw3jC10zc8oDZ/b1mjYlsgtKxr
+qdImy7G6pA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_aaaac50b-0e0f-4f69-870b-f07368c95a31"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8ATk9frK4EZLRFz88ZOKoNIO3InP9EB+Lg3WZ572zM7lfRfOM+f0CFKJxzZXUQZy0H1uetAYrZY7
+57PFk5Zqyg==</DigestValue></Reference></SignedInfo><SignatureValue>hqgpygS15V7mQAUmohauWEzJ+JzyaBSVgCi9ndADTYuAekDcxKnSwVNKOlMYd9EPL+36WESasCXX
+N3HZxpJ3kjDRpkHlx2NtiYugdtuODiF59tnFqA9WZo9+2M+z2F/qbOAB0Hdkm7b4Eb9BNLZvbDci
+jS9LHPbe/COy0lPeURsZpvmlqwNHuF3VVG6QysDYcFOfLg2z2ZhY7UdjOsKm7BK7C08c9cXUqgf7
+Yrs+6eQJ2wRC7PyYZIJTqeXK4KSstqX5H309ybvGbUHcFV1J66nmI+s6j74Rs4X8iPHKjNd6njcM
+1e7Du2i5a/eI57uLcu5EIyB4T/y2q6pED2oc1A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -590,4 +590,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d8b04fe4-8a42-4517-bec3-8dd5464864e9" Target="#_331f9696-849a-439e-8f57-b05bbca6fe50"><Timestamp>2020-04-10 14:26:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_aaaac50b-0e0f-4f69-870b-f07368c95a31" Target="#_4aa3366b-7f57-424a-bec9-9c974235466e"><Timestamp>2020-04-10 14:29:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
