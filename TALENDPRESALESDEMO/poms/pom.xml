@@ -14,7 +14,6 @@
     <module>jobs/process/DQ_POC/Match_Merge/mj_unmerge_records_0.1</module>
     <module>jobs/process/DQ_POC/Data_Extraction/tdqreportrun_0.1</module>
     <module>jobs/process/DQ_POC/Match_Merge/customer_match_merge_0.1</module>
-    <module>jobs/process/DQ_POC/Data_Extraction/load_data_s3_mysql_0.1</module>
     <module>jobs/routes/Pre_Sales_ESB_Demo/customer_consumer_api_0.1</module>
     <module>jobs/process/DQ_POC/Data_Extraction/Archive/mj_extract_data_from_source_0.1</module>
     <module>jobs/routes/Pre_Sales_ESB_Demo/target_api_producer_0.1</module>
@@ -28,6 +27,7 @@
     <module>jobs/process/DQ_POC/Match_Merge/steward_to_master_0.1</module>
     <module>jobs/process/DQ_POC/Data_Extraction/load_data_s3_mysql_csv_0.1</module>
     <module>jobs/process/DQ_POC/Data_Extraction/load_data_s3_mysql_json_0.1</module>
+    <module>jobs/process/DQ_POC/Data_Extraction/load_data_s3_mysql_excel_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
