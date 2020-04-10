@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="Mysql_Login" prompt="Mysql_Login?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="root"/>
-    <contextParameter comment="" name="Mysql_AdditionalParams" prompt="Mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="noDatetimeStringSync=true"/>
-    <contextParameter comment="" name="Mysql_Database" prompt="Mysql_Database?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="test"/>
-    <contextParameter comment="" name="Mysql_Server" prompt="Mysql_Server?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="3306"/>
-    <contextParameter comment="" name="Mysql_Password" prompt="Mysql_Password?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_Password" value="RX/CTwlUNiA="/>
-  </context>
-  <context confirmationNeeded="false" name="dev">
-    <contextParameter comment="" name="Mysql_Login" prompt="Mysql_Login?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="root"/>
-    <contextParameter comment="" name="Mysql_AdditionalParams" prompt="Mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="noDatetimeStringSync=true"/>
-    <contextParameter comment="" name="Mysql_Database" prompt="Mysql_Database?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="test1"/>
-    <contextParameter comment="" name="Mysql_Server" prompt="Mysql_Server?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_String" value="3306"/>
-    <contextParameter comment="" name="Mysql_Password" prompt="Mysql_Password?" promptNeeded="false" repositoryContextId="_2Ld1sHpHEeqDTJykyIARrg" type="id_Password" value="RX/CTwlUNiA="/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" type="id_String" value="&quot;C:/Users/Administrator/Desktop/DQPOC/Input/"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -69,7 +56,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/admin/Documents/Talend721Test/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Administrator/Downloads/Talend-Studio-20190620_1446-V7.2.1/Talend-Studio-20190620_1446-V7.2.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -128,7 +115,7 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/admin/Desktop/Customer.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.InputFilePath+&quot;Customer.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;Data&quot;"/>
@@ -254,6 +241,8 @@
     <elementParameter field="CHECK" name="USE_PREP_PATH" value="false"/>
     <elementParameter field="DATA_PREP_ID" name="PREPARATION_ID" value="&quot;a6327115-5c8e-47ba-8a3d-52854d5ac793&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_NAME" show="false" value="Customer Preparation"/>
+    <elementParameter field="DP_VERSION" name="VERSION_NAME" value=""/>
+    <elementParameter field="TEXT" name="VERSION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="PREPARATION_PATH" show="false" value="&quot;folder/preparation&quot;"/>
     <elementParameter field="TEXT" name="PREPARATION_VERSION" show="false" value="&quot;Current state&quot;"/>
     <elementParameter field="FETCH_SCHEMA" name="FETCH_SCHEMA" value=""/>
@@ -301,7 +290,7 @@
       <column comment="" key="false" length="255" name="STREET" nullable="false" originalDbColumnName="0010" originalLength="255" pattern="" precision="-1" sourceType="String" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.AS_OF_DT " name="AS_OF_DT" type="id_String"/>
@@ -456,8 +445,6 @@
   </node>
   <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_z9Kr4Hi3Eeq2Id-1rOjScQ"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="TEXT" name="HOST" value="context.Mysql_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
@@ -502,13 +489,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_53ad4a8d-aa05-4c6f-8ffa-a4ca0c340df9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CJCro4ZAhV+gea9v/CQC8g2Gl4MKWfeA9PFpCU9PSkDqu9FZK2YNJLQcj+s+q3RMTxwKIBuRlSyg
-iDQX7iF9aw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8687fc4b-1d88-4def-907f-dac79381073d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OhEgF1cN3Y7HQIhUAShMeGWcOCH8oe2/tPwfCzbFMN51rG74yt2ZvqHTWxrgiCR91Kn1GAwYxIhx
-RFFJ4vqDaQ==</DigestValue></Reference></SignedInfo><SignatureValue>g1R/byNl0W3/GylBEuWP1IcJur3282KmcwciICu7j/QAtAk8at1tadwX3BRNbvIhTQdhtqNWGOx0
-n8b4IMXqXu4nxkxoMIRtb08kbDZhBWeOX7EdKItMhx6FmJ1TqUz3fTSjyuoG9yGGvRukCiGAJ7Ye
-weaZUnL/NPKnzNwGjpRyfuZ+mja1Dw/u4taD8R3FhXsBVf7Wahh+IUUZAUZoBPrYnxZVjFY4Ws2T
-NcadUK4o904e4dG6HJVvAVkChQb3vSFd5kTAVOSGunM/dopHaYCguZd/voLj/sFpg+fqdHgNt/DR
-hnZ/bvyvgIMFKsq1rrleclQRbetesgR+WgHIBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_92993f2c-45f4-45fd-ae18-db23af87087b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XcHJIZ+0Wxwi28N84ygJ0DAGeN+eiPWtR8vpUFjY8iwHBejMMsE9sxgfr0iNEUO6CaDIiAVZNZvt
+zd5GD3wf0A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6eebd2eb-bc3f-4364-93b7-e4e9473c1764"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tOjfkur2kK7VJpEQzdXeAf5pTgq6uP17XHhK2IMnA/6NYcL8MZ89IIQYnH3ZTbg+HXJJTtxrrnPb
+XYlpTNbJhw==</DigestValue></Reference></SignedInfo><SignatureValue>cTEtdY7TUPb2l65zQY6GftMZ3qygR015cD7K130N+e/vSHVApTQEOI8Cz1vRzH4TcWGmedY8Y7ot
+bXqXYo0Bx+vra8sdHer9C863+8M3Py2zUOqE0l0XAsJq65d7GtlSfgyoJShYIq61og/K8Q8vFxuF
+y+Ajj5zIazNutwopPm4T8htbNmMsGeLRKyGJCMvxsQdPtINcS8fW/UUjESB4rNbV07HS85FxVxhE
+CVp/RNM6c5XK+p04U01MJyKrbJkcaeuE9wTsnP244PfKg5h72+ZXZQUcm+jmlt9mc+ECfIMpjjtR
+R1jBgR8g/eAQDYNLz9uhotmOqfEfsodrqKac5Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -530,4 +517,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8687fc4b-1d88-4def-907f-dac79381073d" Target="#_53ad4a8d-aa05-4c6f-8ffa-a4ca0c340df9"><Timestamp>2020-04-10 08:47:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6eebd2eb-bc3f-4364-93b7-e4e9473c1764" Target="#_92993f2c-45f4-45fd-ae18-db23af87087b"><Timestamp>2020-04-10 08:51:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
