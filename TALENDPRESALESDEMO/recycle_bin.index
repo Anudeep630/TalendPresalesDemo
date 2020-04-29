@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-04-29T16:21:17.566+0530">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-04-29T16:21:20.124+0530">
   <deletedFolders>process/DQ_POC/Data_Cleansing/Internal_demo</deletedFolders>
   <deletedFolders>process/DQ_POC/Data_Extraction</deletedFolders>
+  <deletedFolders>process/DQ_POC</deletedFolders>
   <deletedItems id="_8X8oYHPsEeq-QudSrpWajQ" path="DQ_POC/Data_Extraction" type="PROCESS"/>
   <deletedItems id="_b6JD0HtAEeqCeJw2c1iDRA" path="Pre_Sales_ESB_Demo" type="ROUTE"/>
   <deletedItems id="_PNM0IIoHEeqQ_61zDvPR0Q" path="DQ_POC/Data_Extraction" type="PROCESS"/>
