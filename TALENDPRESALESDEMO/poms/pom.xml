@@ -19,7 +19,6 @@
     <module>jobs/process/DQ_POC_UseCase/Data_Cleansing/customer_datacleansing_dataprep_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/mj_extract_data_from_source_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/customer_dataquality_report_0.1</module>
-    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/get_file_s3_local_folder_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_csv_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_excel_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_json_0.1</module>
@@ -30,14 +29,12 @@
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/Archieve/mj_unmerge_records_0.1</module>
     <module>code/beans</module>
     <module>jobs/process/Pre_Sales_ESB_Demo/jira_consumer_api_0.1</module>
-    <module>jobs/routes/Pre_Sales_ESB_Demo/aa_0.1</module>
     <module>jobs/routes/Pre_Sales_ESB_Demo/de_0.1</module>
     <module>jobs/process/docker_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/customer_dataquality_report_0.2</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_csv_0.2</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_excel_0.2</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_json_0.2</module>
-    <module>jobs/process/DQ_POC/Data_Extraction/extract_data_from_source_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_txt_0.2</module>
   </modules>
   <properties>
