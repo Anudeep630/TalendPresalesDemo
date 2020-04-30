@@ -60,9 +60,6 @@
     <module>jobs/routes/ErrorHandler/contextscopeerrorhandler_0.1</module>
     <module>jobs/routes/demorestroute_0.1</module>
     <module>jobs/services/demoservice_0.1</module>
-    <module>jobs/process/CRMService/CRMService/getCRMInformation/crmservice_getcrminformation_0.1</module>
-    <module>jobs/process/CRMService/CRMService/getCRMStatus/crmservice_getcrmstatus_0.1</module>
-    <module>jobs/process/CRMService/CRMService/updateCRMStatus/crmservice_updatecrmstatus_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
