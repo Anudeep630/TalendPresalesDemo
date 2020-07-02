@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" type="id_String" value="&quot;C:/Users/Administrator/Desktop/DQPOC/Input/"/>
-    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
-    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mysql"/>
-    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" type="id_String" value="C:/Users/admin/Desktop/New folder/"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" type="id_String" value="admin"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" type="id_String" value="root"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -61,7 +61,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Administrator/Downloads/Talend-Studio-20190620_1446-V7.2.1/Talend-Studio-20190620_1446-V7.2.1/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/admin/Documents/Talend721Test/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -139,6 +139,7 @@
   </node>
   <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileCopy_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.InputFilePath+&quot;Customer.json&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
     <elementParameter field="DIRECTORY" name="SOURCE_DERECTORY" show="false" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;"/>
@@ -154,6 +155,7 @@
   </node>
   <node componentName="tS3Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="-192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Connection_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAZNIJOLNCZ75CO7NA&quot;"/>
     <elementParameter field="PASSWORD" name="SECRET_KEY" value="uZUlZyS5dHqVghRXy+dFnWoLc3pgowXHvrchoH/l871E4Q/cn4h0W+eSohTjo86d"/>
     <elementParameter field="CHECK" name="INHERIT_CREDENTIALS" value="false"/>
@@ -185,6 +187,7 @@
   </node>
   <node componentName="tS3Get" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Get_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
     <elementParameter field="TEXT" name="ACCESS_KEY" show="false" value="&quot;&quot;"/>
@@ -237,14 +240,17 @@
   </node>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="-192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tS3Close" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tS3Close_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tS3Connection_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -254,10 +260,12 @@
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
     <elementParameter field="CHECK" name="USEURL" value="false"/>
     <elementParameter field="TEXT" name="URLPATH" show="false" value="&quot;C:/Users/Administrator/Desktop/DQPOC/Input/customer.json&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.InputFilePath+&quot;Customer.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.InputFilePath+&quot;SFDC.json&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;$[*]&quot;"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$[*]&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CIF"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MOTHER_S_NAME"/>
@@ -282,6 +290,8 @@
       <elementValue elementRef="QUERY" value=""/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="QUERY" value="&quot;SOURCE&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CIF"/>
       <elementValue elementRef="QUERY" value="&quot;CIF&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MOTHER_S_NAME"/>
@@ -306,6 +316,9 @@
       <elementValue elementRef="QUERY" value="&quot;NAME&quot;"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPINGXPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CIF"/>
       <elementValue elementRef="QUERY" value="&quot;CIF&quot;"/>
       <elementValue elementRef="NODECHECK" value=""/>
@@ -352,30 +365,32 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputJSON_1">
-      <column comment="" key="false" length="13" name="CIF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="MOTHER_S_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SOURCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CIF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="MOTHER_S_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="RELIGION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="BRANCH_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="HP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="RELIGION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="BRANCH_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="HP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="NO_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="45" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="13" name="CIF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="23" name="MOTHER_S_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="8" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="7" name="RELIGION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="BRANCH_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="HP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="NO_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="9" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="45" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SOURCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CIF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="MOTHER_S_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="RELIGION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="BRANCH_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="HP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="NO_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -406,9 +421,10 @@
       <column comment="" key="false" length="255" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SOURCE" nullable="true" originalLength="45" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Customer" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.AS_OF_DT " name="AS_OF_DT" nullable="true" type="id_String"/>
@@ -422,8 +438,10 @@
         <mapperTableEntries expression="row1.PLACE_OF_BIRTH " name="PLACE_OF_BIRTH" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.BIRTHDATE " name="BIRTHDATE" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.STREET " name="STREET" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.SOURCE " name="SOURCE" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="SOURCE" nullable="true" type="id_String"/>
         <mapperTableEntries name="CIF" nullable="true" type="id_String"/>
         <mapperTableEntries name="MOTHER_S_NAME" nullable="true" type="id_String"/>
         <mapperTableEntries name="PLACE_OF_BIRTH" nullable="true" type="id_String"/>
@@ -438,7 +456,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="128">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -524,6 +542,11 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -545,6 +568,7 @@
       <column comment="" key="false" length="255" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SOURCE" nullable="true" originalLength="45" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="Customer" name="REJECT">
       <column comment="" key="false" length="255" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -558,33 +582,193 @@
       <column comment="" key="false" length="255" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="255" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="SOURCE" nullable="true" originalLength="45" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tFileInputJSON" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputJSON_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="XPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" show="false" value="2_1_0"/>
+    <elementParameter field="CHECK" name="USEURL" value="false"/>
+    <elementParameter field="TEXT" name="URLPATH" show="false" value="&quot;D:/QlikViewPPP/Talend/SFDC.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;D:/QlikViewPPP/Talend/SFDC.json&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" show="false" value="&quot;/&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIF"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOTHER_S_NAME"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLACE_OF_BIRTH"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RELIGION"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BRANCH_CD"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HP"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BIRTHDATE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREET"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_JSONPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIF"/>
+      <elementValue elementRef="QUERY" value="&quot;CIF&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOTHER_S_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;MOTHER_S_NAME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLACE_OF_BIRTH"/>
+      <elementValue elementRef="QUERY" value="&quot;PLACE_OF_BIRTH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="QUERY" value="&quot;AS_OF_DT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RELIGION"/>
+      <elementValue elementRef="QUERY" value="&quot;RELIGION&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BRANCH_CD"/>
+      <elementValue elementRef="QUERY" value="&quot;BRANCH_CD&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HP"/>
+      <elementValue elementRef="QUERY" value="&quot;HP&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="QUERY" value="&quot;SOURCE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;NO_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BIRTHDATE"/>
+      <elementValue elementRef="QUERY" value="&quot;BIRTHDATE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREET"/>
+      <elementValue elementRef="QUERY" value="&quot;STREET&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;NAME&quot;"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPINGXPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIF"/>
+      <elementValue elementRef="QUERY" value="&quot;CIF&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MOTHER_S_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;MOTHER_S_NAME&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PLACE_OF_BIRTH"/>
+      <elementValue elementRef="QUERY" value="&quot;PLACE_OF_BIRTH&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AS_OF_DT"/>
+      <elementValue elementRef="QUERY" value="&quot;AS_OF_DT&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RELIGION"/>
+      <elementValue elementRef="QUERY" value="&quot;RELIGION&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BRANCH_CD"/>
+      <elementValue elementRef="QUERY" value="&quot;BRANCH_CD&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HP"/>
+      <elementValue elementRef="QUERY" value="&quot;HP&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="QUERY" value="&quot;SOURCE&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;NO_ID&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BIRTHDATE"/>
+      <elementValue elementRef="QUERY" value="&quot;BIRTHDATE&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREET"/>
+      <elementValue elementRef="QUERY" value="&quot;STREET&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;NAME&quot;"/>
+      <elementValue elementRef="NODECHECK" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_8XVKMIhtEeqkbqpBUmHoMg - metadata"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="LABEL" value="ja"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputJSON_2">
+      <column comment="" key="false" length="10" name="CIF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="MOTHER_S_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="RELIGION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="BRANCH_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="HP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SOURCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="NO_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="10" name="CIF" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="MOTHER_S_NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="PLACE_OF_BIRTH" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="AS_OF_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="RELIGION" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="BRANCH_CD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="HP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="SOURCE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="NO_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="BIRTHDATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="35" name="STREET" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="NAME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tS3Connection_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileCopy_1" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_1" target="tDBClose_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tS3Get_1" offsetLabelX="0" offsetLabelY="0" source="tS3Get_1" target="tFileInputJSON_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBClose_1" offsetLabelX="0" offsetLabelY="0" source="tDBClose_1" target="tS3Close_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tFileCopy_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputJSON_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputJSON_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="Customer" lineStyle="0" metaname="Customer" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="SOURCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Customer"/>
   </connection>
@@ -620,13 +804,13 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
@@ -643,13 +827,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2e7bcde7-ba37-4b9d-b6a6-5051b36d62a5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LX4jhfDOHSG88aivVcyLSqjab8jh1DElKaRptB2iaEFwDVKuE5/rWPuKIwuuw+vkQc5KFoA8A1Vy
-wtZ5FB991w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8508ab13-52aa-452c-96e8-52e847eefb58"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aG6b/a069qlUeQe+L23iuL3VjxjHYuekZTcLB0xJhAHzhY2XlJzSj4M9vLZcAaSa2a7aiY7JjLg+
-lUmmMJ0erw==</DigestValue></Reference></SignedInfo><SignatureValue>DnwGC37GRaBmiCsL0rSFrBscSyUZzL86a7raiesJhB6rFc4PE5BQ0b6nEpH/HarD5qwYjSa741GN
-o/xsIp6k/j7f4IwNRwLwIAH38IxhmPfcwblV/Bc3GlgqFhACO3BCBZJC5kszpl+pKXvRUjvWA9ku
-zB5wYL4XGvuJqUdWFSOujP0IJz5Ic7H+h3T96g3oNQ0oZqo9KoJTUOItNiKcvryCVcpee2+mGL3i
-BJkOuW6QbaYSSCBfw1bZdtbHrAEhOXUVbI/w/PU2UwGZIlqlCh/BYuctz7d+q9tjMytlLmzBvdaM
-Exi3K7sgs9tvsp9FXQ4YmRw7NhjGm311yqsfXQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputJSON_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fe514fc2-a08e-4eaa-95e0-e436e0768353"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vpiIORMyrJjbP+4UUt0hu4mcs+W5hGc0wjJxg72xBEvQNxMeF/s1RfRxRpdA6jl3sLnViAgsokc8
+wNr65+vnIg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e9632415-865c-4b9e-b79f-e87cee48d40c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R8mYYdJmBAX38zw/MhrZ1APAeqXKB3WZdpTgIpiCtlYPPgegCTZVb443gBBnS/EbQFAMSKwyqvKr
+zzvEAyGsUw==</DigestValue></Reference></SignedInfo><SignatureValue>DrJMEPWjmWZQIroMnWeOsH5sJjy/DMq2aWtCwMOjLjtGmhYMw5eYYcbHn8Y0t4EJTb3o6GzlxyHj
+r8KStBNWTcqsalHWcJfWNZSRjTfbbw+aBuXCGnTX5HEZUMB0cBx1DUiqpsE7Bk554EfeG6QZbaGq
+2t9FSOQh5jsyKk+VlCCa53rM9J+CgaXvrSAGgVJJmfBKLR4mCHwoQtRJG+iihwchBY15ncVqWuE+
+eiRcziCVpc/5ucz0DxfSHxhA2ukVSO3aNIiRpPedQ6IHTAxRJXkI5GDN3bPSZazZpouMyPjrUVtV
++kG2nGoYkICDNvscvBB/VpH5rL17XSqooA/YlA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -671,4 +860,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8508ab13-52aa-452c-96e8-52e847eefb58" Target="#_2e7bcde7-ba37-4b9d-b6a6-5051b36d62a5"><Timestamp>2020-04-29 10:50:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e9632415-865c-4b9e-b79f-e87cee48d40c" Target="#_fe514fc2-a08e-4eaa-95e0-e436e0768353"><Timestamp>2020-07-02 04:12:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

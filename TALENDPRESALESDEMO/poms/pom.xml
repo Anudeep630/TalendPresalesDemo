@@ -20,7 +20,6 @@
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/customer_dataquality_report_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_csv_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_excel_0.1</module>
-    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_json_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/tdqreportrun_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/Archieve/mj_match_merge_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/customer_match_merge_0.1</module>
@@ -33,8 +32,6 @@
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/customer_dataquality_report_0.2</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_csv_0.2</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_excel_0.2</module>
-    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_json_0.2</module>
-    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_txt_0.2</module>
     <module>jobs/routes/MQ/mqmultireceiver_0.1</module>
     <module>jobs/routes/demorestclientroute_0.1</module>
     <module>jobs/routes/contentbasedrouting_0.1</module>
@@ -68,6 +65,9 @@
     <module>jobs/process/ReservationService/ReservationService/submitCarReservation/reservationservice_submitcarreservation_0.1</module>
     <module>jobs/process/job_38_ELAVON/template_best_practices_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Cleansing/Archive/customer_datacleansing_dataprep_0.1</module>
+    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_json_0.1</module>
+    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_json_0.2</module>
+    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_txt_0.2</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
