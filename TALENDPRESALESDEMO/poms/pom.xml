@@ -18,7 +18,6 @@
     <module>jobs/process/DQ_POC_UseCase/Data_Cleansing/customer_datacleansing_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/mj_extract_data_from_source_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/customer_dataquality_report_0.1</module>
-    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_csv_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_excel_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/tdqreportrun_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Match_Merge/Archieve/mj_match_merge_0.1</module>
@@ -30,7 +29,6 @@
     <module>jobs/routes/Pre_Sales_ESB_Demo/de_0.1</module>
     <module>jobs/process/docker_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/customer_dataquality_report_0.2</module>
-    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_csv_0.2</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_excel_0.2</module>
     <module>jobs/routes/MQ/mqmultireceiver_0.1</module>
     <module>jobs/routes/demorestclientroute_0.1</module>
@@ -68,6 +66,8 @@
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_json_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_json_0.2</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_txt_0.2</module>
+    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_csv_0.1</module>
+    <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/load_data_s3_mysql_csv_0.2</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
