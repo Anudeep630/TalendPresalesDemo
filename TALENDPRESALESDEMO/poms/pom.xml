@@ -16,7 +16,6 @@
     <module>jobs/process/Pre_Sales_ESB_Demo/target_api_producer_job_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Cleansing/Archive/mj_customer_standardize_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Cleansing/customer_datacleansing_0.1</module>
-    <module>jobs/process/DQ_POC_UseCase/Data_Cleansing/customer_datacleansing_dataprep_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/Archive/mj_extract_data_from_source_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/customer_dataquality_report_0.1</module>
     <module>jobs/process/DQ_POC_UseCase/Data_Extraction/load_data_s3_mysql_csv_0.1</module>
@@ -68,6 +67,7 @@
     <module>jobs/process/ReservationService/ReservationService/getConfirmationOfReservation/reservationservice_getconfirmationofreservation_0.1</module>
     <module>jobs/process/ReservationService/ReservationService/submitCarReservation/reservationservice_submitcarreservation_0.1</module>
     <module>jobs/process/job_38_ELAVON/template_best_practices_0.1</module>
+    <module>jobs/process/DQ_POC_UseCase/Data_Cleansing/Archive/customer_datacleansing_dataprep_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
