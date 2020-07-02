@@ -74,8 +74,18 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>camel-core-2.23.1</artifactId>
+      <version>6.0.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>camel-cxf-2.23.1</artifactId>
       <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>camel-cxf-2.23.1</artifactId>
+      <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -91,6 +101,11 @@
       <groupId>org.talend.libraries</groupId>
       <artifactId>camel-spring-2.23.1</artifactId>
       <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>camel-spring-2.23.1</artifactId>
+      <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -128,9 +143,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>cxf-rt-frontend-jaxrs-3.3.1</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+      <version>3.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>
@@ -143,9 +158,9 @@
       <version>3.3.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>cxf-rt-rs-client-3.3.1</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-rs-client</artifactId>
+      <version>3.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -219,14 +234,14 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jackson-jaxrs-base-2.9.9</artifactId>
-      <version>6.0.0</version>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-base</artifactId>
+      <version>2.9.9</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jackson-jaxrs-json-provider-2.9.9</artifactId>
-      <version>6.0.0</version>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-json-provider</artifactId>
+      <version>2.9.9</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -234,9 +249,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jackson-module-jaxb-annotations-2.9.9</artifactId>
-      <version>6.0.0</version>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-jaxb-annotations</artifactId>
+      <version>2.9.9</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -321,7 +336,7 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.26</version>
     </dependency>
@@ -344,6 +359,11 @@
       <groupId>org.talend.libraries</groupId>
       <artifactId>spring-context-5.1.4.RELEASE</artifactId>
       <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>spring-context-5.1.4.RELEASE</artifactId>
+      <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -391,13 +411,18 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>xmlschema-core-2.2.4</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.apache.ws.xmlschema</groupId>
+      <artifactId>xmlschema-core</artifactId>
+      <version>2.2.4</version>
     </dependency>
     <dependency>
       <groupId>org.example.talendpresalesdemo.code</groupId>
       <artifactId>routines</artifactId>
+      <version>7.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.talendpresalesdemo.bean</groupId>
+      <artifactId>beans</artifactId>
       <version>7.2.1</version>
     </dependency>
     <dependency>

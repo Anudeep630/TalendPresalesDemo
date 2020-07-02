@@ -159,9 +159,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>cxf-rt-frontend-jaxrs-3.3.1</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+      <version>3.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>
@@ -174,9 +174,9 @@
       <version>3.3.1</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>cxf-rt-rs-client-3.3.1</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-rs-client</artifactId>
+      <version>3.3.1</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -307,7 +307,7 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.26</version>
     </dependency>
@@ -382,9 +382,9 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>xmlschema-core-2.2.4</artifactId>
-      <version>6.0.0</version>
+      <groupId>org.apache.ws.xmlschema</groupId>
+      <artifactId>xmlschema-core</artifactId>
+      <version>2.2.4</version>
     </dependency>
     <dependency>
       <groupId>org.example.talendpresalesdemo.code</groupId>
