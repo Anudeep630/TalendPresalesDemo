@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_PG4ioXsSEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" creationDate="2020-04-10T15:31:24.154+0530" logo="C:\Users\Administrator\Desktop\DQPOC\BackupJobs\arthalogo.jpg" defaultContext="Default">
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_PG4ioXsSEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" creationDate="2020-04-10T15:31:24.154+0530" defaultContext="Default">
   <clientDependency href="../Analyses/Customer_basic_Column_Analysis_0.1.ana#_PG4isnsSEeqCeJw2c1iDRA"/>
-  <taggedValue xmi:id="_PG4ionsSEeqCeJw2c1iDRA" tag="OutputFolder" value="C:\Users\Administrator\Desktop\DQPOC\Output\DqReport"/>
+  <taggedValue xmi:id="_PG4ionsSEeqCeJw2c1iDRA" tag="OutputFolder" value="C:\Users\admin\Desktop\DQDemo\Report"/>
   <taggedValue xmi:id="_PG4io3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBTYPE" value="MySQL"/>
   <taggedValue xmi:id="_PG4ipHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBVERSION" value="MYSQL_5"/>
   <taggedValue xmi:id="_PG4ipXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_HOST" value="localhost"/>
@@ -9,7 +9,7 @@
   <taggedValue xmi:id="_PG4ip3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
   <taggedValue xmi:id="_PG4iqHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_SCHEMA" value=""/>
   <taggedValue xmi:id="_PG4iqXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_USER" value="root"/>
-  <taggedValue xmi:id="_PG4iqnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_PASSWORD" value="aJJSf25TI5E="/>
+  <taggedValue xmi:id="_PG4iqnsSEeqCeJw2c1iDRA" tag="REP_DBINFO_PASSWORD" value="RX/CTwlUNiA="/>
   <taggedValue xmi:id="_PG4iq3sSEeqCeJw2c1iDRA" tag="REP_DBINFO_PARAMETER" value="characterEncoding=UTF8"/>
   <taggedValue xmi:id="_PG4irHsSEeqCeJw2c1iDRA" tag="REP_DBINFO_URL" value="jdbc:mysql://localhost:3306/talend_dq?characterEncoding=UTF8"/>
   <taggedValue xmi:id="_PG4irXsSEeqCeJw2c1iDRA" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
