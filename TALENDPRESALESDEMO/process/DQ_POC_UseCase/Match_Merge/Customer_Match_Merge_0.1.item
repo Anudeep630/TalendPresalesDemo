@@ -160,12 +160,12 @@
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;root&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="pphwy87hqwU="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;customer&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;Customer_Standardize&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value=" &quot;select  `Customer_Standardize`.`BIRTHDATE`, &#13;&#10;  `Customer_Standardize`.`NAME`, &#13;&#10;  `Customer_Standardize`.`MOTHER_S_NAME`, &#13;&#10;  `Customer_Standardize`.`PLACE_OF_BIRTH`, &#13;&#10;  `Customer_Standardize`.`STREET`, &#13;&#10;  `Customer_Standardize`.`RELIGION`, &#13;&#10;  `Customer_Standardize`.`AS_OF_DT`, &#13;&#10;  `Customer_Standardize`.`CIF`, &#13;&#10;  `Customer_Standardize_Standardize`.`BRANCH_CD`, &#13;&#10;   `Customer_Standardize_Standardize`.`HP`,&#13;&#10;  `Customer_Standardize_Standardize`.`NO_ID`, &#13;&#10;  `Customer_Standardize_Standardize`.`STREET` from Customer_Standardize_Standardize_Standardize where not isnull( NAME) or length(  NAME) !=0  &quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `Customer_Standardize`.`BIRTHDATE`, &#10;  `Customer_Standardize`.`NAME`, &#10;  `Customer_Standardize`.`MOTHER_S_NAME`, &#10;  `Customer_Standardize`.`PLACE_OF_BIRTH`, &#10;  `Customer_Standardize`.`STREET`, &#10;  `Customer_Standardize`.`RELIGION`, &#10;  `Customer_Standardize`.`AS_OF_DT`, &#10;  `Customer_Standardize`.`CIF`, &#10;  `Customer_Standardize`.`BRANCH_CD`, &#10;  `Customer_Standardize`.`HP`, &#10;  `Customer_Standardize`.`NO_ID`&#10;FROM `Customer_Standardize` where not isnull( NAME) or length(  NAME) !=0   &quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1448,13 +1448,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9d2800db-e3b4-4acc-9ed3-2b9a259f2f60"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AzuXKfF+moT7HkJ3WETQz6J508rHmpxV0hz+tsH7jZI7LG2y2XTt9ffdg1GibHNPwjeolqplizgl
-rCwumg+dlw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5066114d-545f-49eb-90f6-3aee08925f35"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1uoOaobGVVCDoBWNNN4SZdKF069JrRjVeHmuPb2hAyIRjS/XNEyVVczNh0GaExoucyM1gqwLEqvt
-gj+lOM8BdA==</DigestValue></Reference></SignedInfo><SignatureValue>STcsgQCaZg7X+erOrLaUJ/zvyAxzN0oFsv+egVDaadqNvG3QvY414JNF4zFSFz3QZOQAE0aaju++
-nOfFt/MQF8KmCg9YgDsA3jQbJzCQxsTRSMlJWsCb+s82JxrTMCL0dWRMkVZFEXQfSWEQC26a93uW
-xuQpwaIqkL6ZHGQFUxdCCU9Wl6lTtAxQtkjZVt4RZZa2k8KO3LLUQsYlTildnQELBFHzDl+YvqN+
-mVrXFgaHpM7EN09wnVNvU9KufFbDRU1yxVoXBPQOmClgwee2XezwmT4LsYi3LV9EIFzHkmK+ZC2e
-01nfErHfNmvQEQAmNp/uLZKAN8ZBLJJ+1N0fZg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_24d16fd3-7552-45f5-9716-329eac5f314a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gPku26+E8R3CWJ46N+6LDMeTG6qGqCpyEbk+3LNr1ZQ190EarB0VM3NIKV8JQmN/b2/fLql2jDGh
+QkQq/VzEFw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_291ce1fb-2504-4275-8307-00c560720a8a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NZQnnNKklT4AXxLjGaPUZHbK8rprDxs2v9CjRY/oXJCjU0FCuIbtWOEhAWbLCP9xE4F5RbrWUp1H
+3UIK5QfgTg==</DigestValue></Reference></SignedInfo><SignatureValue>AQ+DkMhG2lsHzP6jH5LsT8CBT7qrO941B11pIYnNtQSmvsG17a3gPxBOF4iXUv5KwfZlXR5f3a/2
+3GGxrRtmQaq35LLgvgwCfP8gLntNwdYjPuvDr7qunZp5ZvfX2U7p3LYjg0lCcO9OfhTID4IwHmks
+IwjDNRHW7R8cvMcgpgSqO4QWK2Vj/a4TcGg5Jl7o8gEJcipO6qI0xnRzyVmbkNqtSH31dgloANuD
+5lvfhj8wXKwylwZ0TxIBWM8I4QHsIBG1rBIo1fPJrltxrPoJ/skCcVSIGE268pP8RUXUvXPgvNIY
+diH6anWfB+SUIDAUah10t8JYl7lCpvzvJNXlRg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1476,4 +1476,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5066114d-545f-49eb-90f6-3aee08925f35" Target="#_9d2800db-e3b4-4acc-9ed3-2b9a259f2f60"><Timestamp>2020-07-02 04:30:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_291ce1fb-2504-4275-8307-00c560720a8a" Target="#_24d16fd3-7552-45f5-9716-329eac5f314a"><Timestamp>2020-07-02 04:31:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
