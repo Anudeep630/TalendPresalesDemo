@@ -3,6 +3,7 @@
   <dataquality.analysis:Analysis xmi:id="__eef0HsQEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" supplierDependency="_PG4isnsSEeqCeJw2c1iDRA" creationDate="2020-04-10T15:22:29.757+0530" defaultContext="Default">
     <clientDependency href="../../metadata/connections/MDM_Usecase_0.1.item#_JOouonNLEeq_kP4Tb2SfxA"/>
     <clientDependency href="../../TDQ_Libraries/Patterns/Regex/SpecialCharacters_0.1.pattern#_KmVgsLzeEeq9Kq3Y28JzmQ"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/specialcharacters_java_0.1.pattern#_tIxaALzeEeq9Kq3Y28JzmQ"/>
     <taggedValue xmi:id="__eef0XsQEeqCeJw2c1iDRA" tag="Status" value="development"/>
     <taggedValue xmi:id="__eef0nsQEeqCeJw2c1iDRA" tag="Author" value="palem.varun@nfrthinkartha.com"/>
     <taggedValue xmi:id="__eef03sQEeqCeJw2c1iDRA" tag="Purpose" value=""/>
@@ -17,7 +18,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
     </context>
     <results xmi:id="__eef13sQEeqCeJw2c1iDRA">
-      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:06:29.411+0530" executionDuration="302" message="For more information please refer to the Error Log view." executionNumber="22" lastExecutionNumberOk="20"/>
+      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:08:50.626+0530" executionDuration="362" message="For more information please refer to the Error Log view." executionNumber="23" lastExecutionNumberOk="20"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_KKAOZHsREeqCeJw2c1iDRA" count="1728" nullCount="2" computed="true">
         <parameters xmi:id="_KKAOZXsREeqCeJw2c1iDRA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
@@ -109,6 +110,16 @@
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_YZS6QLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%'  or NAME is null or NAME like '% %')" language="MySQL"/>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_tIa0sLzeEeq9Kq3Y28JzmQ" name="specialcharacters_java" count="1728" nullCount="3">
+        <parameters xmi:id="_tIa0sbzeEeq9Kq3Y28JzmQ">
+          <dataValidDomain xmi:id="_tIa0srzeEeq9Kq3Y28JzmQ">
+            <patterns href="../../TDQ_Libraries/Patterns/Regex/specialcharacters_java_0.1.pattern#_oFJIELzeEeq9Kq3Y28JzmQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tcCUQLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%'  or NAME is null or NAME like '% %')" language="MySQL"/>
       </indicators>
     </results>
     <parameters xmi:id="__eef2XsQEeqCeJw2c1iDRA" dataFilter="_KKJ_YXsREeqCeJw2c1iDRA" analysisType="Multiple Column Analysis"/>
