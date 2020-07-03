@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.indicators.sql="http://dataquality.indicators.sql" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmi:id="_aVJN0LzcEeq9Kq3Y28JzmQ" name="customer_BusinessRule" creationDate="2020-07-03T08:52:21.343+0530">
+  <clientDependency href="../../metadata/connections/MDM_Usecase_0.1.item#_JOouonNLEeq_kP4Tb2SfxA"/>
+  <clientDependency href="../../TDQ_Libraries/Rules/SQL/Demo_DQ_Rule_0.1.rules#_aVLqELzcEeq9Kq3Y28JzmQ"/>
+  <taggedValue xmi:id="_aVJN0bzcEeq9Kq3Y28JzmQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_aVJN0rzcEeq9Kq3Y28JzmQ" tag="Author" value="user2@talend.com"/>
+  <taggedValue xmi:id="_aVJN07zcEeq9Kq3Y28JzmQ" tag="Purpose"/>
+  <taggedValue xmi:id="_aVJN1LzcEeq9Kq3Y28JzmQ" tag="Description"/>
+  <taggedValue xmi:id="_aVJN1bzcEeq9Kq3Y28JzmQ" tag="Version" value="0.1"/>
+  <context xmi:id="_aVJN1rzcEeq9Kq3Y28JzmQ">
+    <connection href="../../metadata/connections/MDM_Usecase_0.1.item#_HKjTwHNHEeq_kP4Tb2SfxA"/>
+    <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ48HNHEeq_kP4Tb2SfxA"/>
+  </context>
+  <results xmi:id="_aVJN17zcEeq9Kq3Y28JzmQ">
+    <resultMetadata xmi:id="_aVJN2LzcEeq9Kq3Y28JzmQ"/>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_aVJN2bzcEeq9Kq3Y28JzmQ">
+      <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ48HNHEeq_kP4Tb2SfxA"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+    </indicators>
+    <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_aVJN2rzcEeq9Kq3Y28JzmQ">
+      <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ48HNHEeq_kP4Tb2SfxA"/>
+      <indicatorDefinition href="../../TDQ_Libraries/Rules/SQL/Demo_DQ_Rule_0.1.rules#_hXIKcA-ZEd6qupbF9NyF4w"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_aVJN27zcEeq9Kq3Y28JzmQ" analysisType="Table Analysis"/>
+</dataquality.analysis:Analysis>
