@@ -153,7 +153,7 @@
   <dataquality.domain:Domain xmi:id="_KKJ_YXsREeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis">
     <ranges xmi:id="_KKJ_YnsREeqCeJw2c1iDRA">
       <expressions xmi:id="_KKJ_Y3sREeqCeJw2c1iDRA">
-        <expression xsi:type="relational:TdExpression" xmi:id="_KKJ_ZHsREeqCeJw2c1iDRA" body="NAME like '%@%' or NAME like '%..%'  or NAME is null or NAME like '% %'" language="SQL"/>
+        <expression xsi:type="relational:TdExpression" xmi:id="_KKJ_ZHsREeqCeJw2c1iDRA" body="NAME like '%@%' or NAME like '%..%'  " language="SQL"/>
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
