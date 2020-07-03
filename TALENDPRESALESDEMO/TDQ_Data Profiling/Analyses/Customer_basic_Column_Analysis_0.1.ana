@@ -2,8 +2,6 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="__eef0HsQEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" supplierDependency="_PG4isnsSEeqCeJw2c1iDRA" creationDate="2020-04-10T15:22:29.757+0530" defaultContext="Default">
     <clientDependency href="../../metadata/connections/MDM_Usecase_0.1.item#_JOouonNLEeq_kP4Tb2SfxA"/>
-    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/SpecialCharacters_0.1.pattern#_KmVgsLzeEeq9Kq3Y28JzmQ"/>
-    <clientDependency href="../../TDQ_Libraries/Patterns/Regex/specialcharacters_java_0.1.pattern#_tIxaALzeEeq9Kq3Y28JzmQ"/>
     <taggedValue xmi:id="__eef0XsQEeqCeJw2c1iDRA" tag="Status" value="development"/>
     <taggedValue xmi:id="__eef0nsQEeqCeJw2c1iDRA" tag="Author" value="palem.varun@nfrthinkartha.com"/>
     <taggedValue xmi:id="__eef03sQEeqCeJw2c1iDRA" tag="Purpose" value=""/>
@@ -100,26 +98,6 @@
           <sqlGenericExpression xmi:id="_Kb4olnsREeqCeJw2c1iDRA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
           <sqlGenericExpression xmi:id="_Kb4ol3sREeqCeJw2c1iDRA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_YGiWULzeEeq9Kq3Y28JzmQ" name="SpecialCharacters" count="6" computed="true" inValidRow="true" notMatchingValueCount="1728">
-        <parameters xmi:id="_YGiWUbzeEeq9Kq3Y28JzmQ">
-          <dataValidDomain xmi:id="_YGiWUrzeEeq9Kq3Y28JzmQ">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/SpecialCharacters_0.1.pattern#_7dXWcLzdEeq9Kq3Y28JzmQ"/>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_YZS6QLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%')" language="MySQL"/>
-      </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_tIa0sLzeEeq9Kq3Y28JzmQ" name="specialcharacters_java" count="6" computed="true" inValidRow="true" notMatchingValueCount="1728">
-        <parameters xmi:id="_tIa0sbzeEeq9Kq3Y28JzmQ">
-          <dataValidDomain xmi:id="_tIa0srzeEeq9Kq3Y28JzmQ">
-            <patterns href="../../TDQ_Libraries/Patterns/Regex/specialcharacters_java_0.1.pattern#_oFJIELzeEeq9Kq3Y28JzmQ"/>
-          </dataValidDomain>
-        </parameters>
-        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
-        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tcCUQLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%')" language="MySQL"/>
       </indicators>
     </results>
     <parameters xmi:id="__eef2XsQEeqCeJw2c1iDRA" dataFilter="_KKJ_YXsREeqCeJw2c1iDRA" analysisType="Multiple Column Analysis"/>
