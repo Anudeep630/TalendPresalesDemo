@@ -17,7 +17,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
     </context>
     <results xmi:id="__eef13sQEeqCeJw2c1iDRA">
-      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:06:08.592+0530" executionDuration="304" message="For more information please refer to the Error Log view." executionNumber="21" lastExecutionNumberOk="20"/>
+      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:06:29.411+0530" executionDuration="302" message="For more information please refer to the Error Log view." executionNumber="22" lastExecutionNumberOk="20"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_KKAOZHsREeqCeJw2c1iDRA" count="1728" nullCount="2" computed="true">
         <parameters xmi:id="_KKAOZXsREeqCeJw2c1iDRA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
@@ -100,15 +100,15 @@
           <sqlGenericExpression xmi:id="_Kb4ol3sREeqCeJw2c1iDRA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_KmOL8LzeEeq9Kq3Y28JzmQ" name="SpecialCharacters" count="1728" nullCount="3" computed="true" notMatchingValueCount="1728">
-        <parameters xmi:id="_KmOL8bzeEeq9Kq3Y28JzmQ">
-          <dataValidDomain xmi:id="_KmOL8rzeEeq9Kq3Y28JzmQ">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_YGiWULzeEeq9Kq3Y28JzmQ" name="SpecialCharacters" count="1728" nullCount="3">
+        <parameters xmi:id="_YGiWUbzeEeq9Kq3Y28JzmQ">
+          <dataValidDomain xmi:id="_YGiWUrzeEeq9Kq3Y28JzmQ">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/SpecialCharacters_0.1.pattern#_7dXWcLzdEeq9Kq3Y28JzmQ"/>
           </dataValidDomain>
         </parameters>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
-        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_K4bWQLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%'  or NAME is null or NAME like '% %')" language="MySQL"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_YZS6QLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%'  or NAME is null or NAME like '% %')" language="MySQL"/>
       </indicators>
     </results>
     <parameters xmi:id="__eef2XsQEeqCeJw2c1iDRA" dataFilter="_KKJ_YXsREeqCeJw2c1iDRA" analysisType="Multiple Column Analysis"/>
