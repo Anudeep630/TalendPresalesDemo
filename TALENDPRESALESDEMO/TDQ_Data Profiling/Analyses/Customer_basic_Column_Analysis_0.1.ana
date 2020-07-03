@@ -18,8 +18,8 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
     </context>
     <results xmi:id="__eef13sQEeqCeJw2c1iDRA">
-      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:08:50.626+0530" executionDuration="362" message="For more information please refer to the Error Log view." executionNumber="23" lastExecutionNumberOk="20"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_KKAOZHsREeqCeJw2c1iDRA" count="1728" nullCount="2" computed="true">
+      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:09:11.225+0530" executionDuration="876" message="" executionNumber="24" lastRunOk="true" lastExecutionNumberOk="21"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_KKAOZHsREeqCeJw2c1iDRA" count="1728" nullCount="3" computed="true">
         <parameters xmi:id="_KKAOZXsREeqCeJw2c1iDRA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
@@ -101,7 +101,7 @@
           <sqlGenericExpression xmi:id="_Kb4ol3sREeqCeJw2c1iDRA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_YGiWULzeEeq9Kq3Y28JzmQ" name="SpecialCharacters" count="1728" nullCount="3">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_YGiWULzeEeq9Kq3Y28JzmQ" name="SpecialCharacters" count="1728" nullCount="3" computed="true" inValidRow="true" notMatchingValueCount="1728">
         <parameters xmi:id="_YGiWUbzeEeq9Kq3Y28JzmQ">
           <dataValidDomain xmi:id="_YGiWUrzeEeq9Kq3Y28JzmQ">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/SpecialCharacters_0.1.pattern#_7dXWcLzdEeq9Kq3Y28JzmQ"/>
@@ -111,7 +111,7 @@
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/Regular_Expression_Matching_0.1.definition#_yb-_8Dh8Ed2XmO7pl5Yuyg"/>
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_YZS6QLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%'  or NAME is null or NAME like '% %')" language="MySQL"/>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_tIa0sLzeEeq9Kq3Y28JzmQ" name="specialcharacters_java" count="1728" nullCount="3">
+      <indicators xsi:type="dataquality.indicators:RegexpMatchingIndicator" xmi:id="_tIa0sLzeEeq9Kq3Y28JzmQ" name="specialcharacters_java" count="1728" nullCount="3" computed="true" inValidRow="true" notMatchingValueCount="1728">
         <parameters xmi:id="_tIa0sbzeEeq9Kq3Y28JzmQ">
           <dataValidDomain xmi:id="_tIa0srzeEeq9Kq3Y28JzmQ">
             <patterns href="../../TDQ_Libraries/Patterns/Regex/specialcharacters_java_0.1.pattern#_oFJIELzeEeq9Kq3Y28JzmQ"/>
