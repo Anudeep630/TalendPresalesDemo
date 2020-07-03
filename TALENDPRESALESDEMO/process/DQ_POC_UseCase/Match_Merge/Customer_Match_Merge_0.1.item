@@ -6,6 +6,27 @@
     <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
     <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
   </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -244,7 +265,7 @@
       <column comment="" key="false" length="16" name="NO_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" name="DEDUP" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row5.NAME" name="NAME" nullable="true" type="id_String"/>
@@ -470,7 +491,7 @@
       <column comment="" key="false" length="255" name="GID" nullable="false" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="!row2.NAME.equals(&quot; &quot;) " name="load_uniques" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.NAME " name="NAME" type="id_String"/>
@@ -1448,13 +1469,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_86eef9e8-5aed-474e-b2f6-30987935ee9e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nRgTD9pa2enKcAzMQ0WUks/9aqE9AL9aVAr/a3oEI6107tNAOuVfrhB3Awc97zukLwTsY+dLMBvV
-17WW7vUNXA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6aaea354-b5d0-44c5-8449-b7361473fa11"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NPSM0m+lvC/y5KcXmhM5E6ghVbx3r707e5fGdwrMLWL8v967NLRajMNnG17VMYWtJS3TKJCD9PlZ
-1nraYwLffw==</DigestValue></Reference></SignedInfo><SignatureValue>HPvaZ91XyOw9d1HUv41NIdm6Igo0HFxa7yXulxbT3Kdlrj2/SRpZEqXzmFahm1u32EZ1/po73+qo
-GJ5nFMCn20TGVspsjgOxsxH4H0F+RfxHaMKslLpPQ0h7G15Jb4Pq5vcQl6pn8gyorL77CdSXcl8B
-hA4JhXlojMmaIuDSR/QBenxvbIMlzbeI99hJku3IEebsiOs8ZwPUCcZvds2AT9uCwYsyaounFqmI
-pztlNXQd3Xh87XMiAWGHaoT/xIVpqXnh+gZftpjIkTLmPO5ZHSJI/MeLU7jJSMKJ9qeMcwO3gG99
-VHIJ/93xG/X5jwDJOc35NDBXV1UFcnnvm2WcGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_caa06201-a25a-4d22-b3fb-f31fa90835c0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1CufruBr/Y6kYPxDN/mzPeDly+HcX8w96lSeKNyIIyQFSlO2culbWtToR2z5tKu2e47IyIEVnsRw
+J10vC3ATHQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0d084386-efb2-42a8-ba47-08b7c1154c99"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>npCmhnswaJ5sTIxRBSaDnWrPqmwAFCGpyNa/5gR//tYUt7Ruyrt03y+0MRSEzEUGsCH+T1isVDIa
+//PCHfzQPg==</DigestValue></Reference></SignedInfo><SignatureValue>bFWGlZcev5dNKSLC5JumND2duG+nGIBgotqldfunLcoZyCObAHAzg2mjWLifxDl+/oOT7q/YtApf
+m2QG8UYwl9ArcHvEi8OpefSphMXlPKjd1svjz2k+9mZEmYo0qJaIK9LUNmnTa+3LkAPHKgg+qVOg
+92hSrMNzqe4I+gdWRMxLiaroAPN4jqRxy6duAVPuIaCQtmHJzRXzrbjMNTxBMv3HCuRLx/9AWktF
+am9seYhwFywW4JPVNwR1iojTSrcK3tGmHbaMsHj9p/j7SG6+xT6PUn19enznmcpkNUGhMj1oiQMg
+FsOKELWG+B9DeAgVgvPlPfrZ1Iy0bKi5KOI31g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1476,4 +1497,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6aaea354-b5d0-44c5-8449-b7361473fa11" Target="#_86eef9e8-5aed-474e-b2f6-30987935ee9e"><Timestamp>2020-07-02 05:20:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0d084386-efb2-42a8-ba47-08b7c1154c99" Target="#_caa06201-a25a-4d22-b3fb-f31fa90835c0"><Timestamp>2020-07-03 05:37:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
