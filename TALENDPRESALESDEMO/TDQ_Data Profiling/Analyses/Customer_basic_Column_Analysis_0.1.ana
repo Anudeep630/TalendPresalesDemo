@@ -122,7 +122,7 @@
         <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_tcCUQLzeEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` REGEXP BINARY '^[A-Za-z.,@'#`\\s]{1,}$' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%'  or NAME is null or NAME like '% %')" language="MySQL"/>
       </indicators>
     </results>
-    <parameters xmi:id="__eef2XsQEeqCeJw2c1iDRA" dataFilter="_KKJ_YXsREeqCeJw2c1iDRA" analysisType="Multiple Column Analysis"/>
+    <parameters xmi:id="__eef2XsQEeqCeJw2c1iDRA" dataFilter="_KKJ_YXsREeqCeJw2c1iDRA" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
     <contextType xmi:id="_KKAOYHsREeqCeJw2c1iDRA" confirmationNeeded="false" name="Default"/>
   </dataquality.analysis:Analysis>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_PG4isnsSEeqCeJw2c1iDRA" kind="Usage" supplier="__eef0HsQEeqCeJw2c1iDRA">
