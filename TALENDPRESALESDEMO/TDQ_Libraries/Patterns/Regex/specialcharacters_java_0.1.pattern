@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_oFJIELzeEeq9Kq3Y28JzmQ" name="specialcharacters_java">
+  <taggedValue xmi:id="_oFJIEbzeEeq9Kq3Y28JzmQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_oFJIErzeEeq9Kq3Y28JzmQ" tag="Author" value="user2@talend.com"/>
+  <taggedValue xmi:id="_oFJIE7zeEeq9Kq3Y28JzmQ" tag="Purpose"/>
+  <taggedValue xmi:id="_oFJIFLzeEeq9Kq3Y28JzmQ" tag="Description"/>
+  <taggedValue xmi:id="_oFJIFbzeEeq9Kq3Y28JzmQ" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_oFJIFrzeEeq9Kq3Y28JzmQ" tag="Validation_Status" value="true"/>
+  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_oFJIF7zeEeq9Kq3Y28JzmQ" expressionType="REGEXP">
+    <expression xmi:id="_oFJIGLzeEeq9Kq3Y28JzmQ" body="'^[A-Za-z.,@'#`\\s]{1,}$'" language="SQL"/>
+  </components>
+</dataquality.domain.pattern:Pattern>
