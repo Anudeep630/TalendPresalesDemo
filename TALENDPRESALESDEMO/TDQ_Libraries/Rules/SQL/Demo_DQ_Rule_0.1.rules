@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_hXIKcA-ZEd6qupbF9NyF4w" name="Demo DQ Rule" criticalityLevel="1" whereExpression="example != ''">
-  <taggedValue xmi:id="_hXIKcQ-ZEd6qupbF9NyF4w" tag="Author" value="xqliu"/>
+<dataquality.rules:WhereRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_hXIKcA-ZEd6qupbF9NyF4w" name="Demo DQ Rule" criticalityLevel="1" whereExpression="name like '%@#%'">
+  <taggedValue xmi:id="_hXIKcQ-ZEd6qupbF9NyF4w" tag="Author" value="palem.varun@nfrthinkartha.com"/>
   <taggedValue xmi:id="_hXIKcg-ZEd6qupbF9NyF4w" tag="Description" value="demo"/>
   <taggedValue xmi:id="_hXIKcw-ZEd6qupbF9NyF4w" tag="Purpose" value="demo"/>
   <taggedValue xmi:id="_hXIKdA-ZEd6qupbF9NyF4w" tag="Status" value="Draft"/>
