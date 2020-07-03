@@ -7,6 +7,30 @@
     <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
     <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
   </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" type="id_String" value="&quot;C:/Users/Administrator/Desktop/DQPOC/Input/"/>
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" type="id_String" value="&quot;C:/Users/Administrator/Desktop/DQPOC/Input/"/>
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="InputFilePath" prompt="InputFilePath?" promptNeeded="false" type="id_String" value="&quot;C:/Users/Administrator/Desktop/DQPOC/Input/"/>
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="32"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="160"/>
@@ -472,13 +496,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_09bba13b-a618-492b-8292-259290c05d32"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X858OD+SfmPqNnqBXG/kD4RwZdRlUl4KwmKogjKH8JgP14+m9SSYZTFvu4HQSIPgjWrETwR8z62J
-Guda0i1shQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ba5c9609-7a56-4cbe-9dfc-8515012ca2d4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p1B5urmLXiO/r1YqYWmaX1BDjeG0fuC3ksfEJ5Cafq0n9Jkuu/M1khFLL+UtfIeThfyHUJLMh8yB
-Zrz1Lomr9A==</DigestValue></Reference></SignedInfo><SignatureValue>JcgmoecjRDRQ4qEp2ImyQ/xT2SgBHL0NFtBqF2M6fJF0crmBFSjb+IulkYTzCjPHt5y4DAReUnWY
-o6HUC8FBt/yOQAKOhp24USWfExbHmddaJpUeDZ6UbMAOyvTjuD2Z+1a2j1HtnHpXZHBkWnCr2L3/
-RJeeZXleorjK73pAEweop1FToxnzADejVzIkdigX4AjuRbL5Q/EyNZdRIHOYQjfg0q5MnLE9/0FB
-OiR+o2S3q8I7m7buQawkY5zPBWukXqTFoIDhwULDZbbJlWaZJ9Ie3/uPVDIvhhfdyl9HURwMCGcG
-6wtUBG3UWeUXJvT0rt6Vjx+0Ov5IPsDLDmElzw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cea06e5c-f46a-4cc1-8258-08bb34157d65"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>F/+QKuayBsFTscJFV/IwYCxgLyLhs4v8+oTLUNk91voripYmPb4oRJSSCrZ3/W1x13h7+Ba3EAlv
+6wfQu1h7dg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_83e9891a-5a00-4586-a1b8-cd531dfdaf2e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xn3IM5hkrlP7lkrUuT32Sm2W4xO8CiLlmlUea+uLXQQoY9ocUBwPulB7BZr60tKsvzWafpro8F5b
+wuAsEoYptg==</DigestValue></Reference></SignedInfo><SignatureValue>fyqUoQ02mnNaVdKY4ipkgy6bbCqp6Yh5FrI5iLprju6EOTWJJXxndOxnSBPiuDGkUsT7L5X3p3EJ
+qacbS2B6LWrtqNL4lXy5zMin5jEcRMFN7+5YCFd3x4Qg9YPUDy0HEltonn21Xiy+8J2SQ5taOUxz
+YoHvoWP2UAFOBmY5NdB4wdnP37lxlPqb0KG3I6nnbrrlhDi1xwCYAS6+8uJs5Yg00w/Opi89idp6
+7djIkQyVg+U+oiXsb7lGapQBfgmMgaEHRt+13/y8yDTjid4u102UnhAC5OFlo6gkqZlgzmDm0FU1
+muf/8qUn//N+vZyApnOlWn9pm+m4ElR+oFMDpA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -500,4 +524,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ba5c9609-7a56-4cbe-9dfc-8515012ca2d4" Target="#_09bba13b-a618-492b-8292-259290c05d32"><Timestamp>2020-07-03 03:28:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_83e9891a-5a00-4586-a1b8-cd531dfdaf2e" Target="#_cea06e5c-f46a-4cc1-8258-08bb34157d65"><Timestamp>2020-07-03 05:33:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

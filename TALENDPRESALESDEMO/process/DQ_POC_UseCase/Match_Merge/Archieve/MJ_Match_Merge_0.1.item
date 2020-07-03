@@ -9,6 +9,36 @@
     <contextParameter comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value="&quot;http://localhost:19999/data-stewardship/&quot;"/>
     <contextParameter comment="" name="TDS_UserName" prompt="TDS_UserName?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value=""/>
   </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="TDS_Password" prompt="TDS_Password?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value=""/>
+    <contextParameter comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value="&quot;http://localhost:19999/data-stewardship/&quot;"/>
+    <contextParameter comment="" name="TDS_UserName" prompt="TDS_UserName?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value=""/>
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="TDS_Password" prompt="TDS_Password?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value=""/>
+    <contextParameter comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value="&quot;http://localhost:19999/data-stewardship/&quot;"/>
+    <contextParameter comment="" name="TDS_UserName" prompt="TDS_UserName?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value=""/>
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="TDS_Password" prompt="TDS_Password?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value=""/>
+    <contextParameter comment="" name="TDS_URL" prompt="TDS_URL?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value="&quot;http://localhost:19999/data-stewardship/&quot;"/>
+    <contextParameter comment="" name="TDS_UserName" prompt="TDS_UserName?" promptNeeded="false" repositoryContextId="_6AKZkG0FEeqWh-DbR4AtFw" type="id_String" value=""/>
+    <contextParameter comment="" name="Mysql_Host" prompt="Mysql_Host?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_DB" prompt="Mysql_DB?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="mdm_usecase"/>
+    <contextParameter comment="" name="Mysql_UserName" prompt="Mysql_UserName?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_password" prompt="Mysql_password?" promptNeeded="false" repositoryContextId="_v2Ao0Gz8EeqWh-DbR4AtFw" type="id_String" value="admin"/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -1817,13 +1847,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e5dca331-f97d-42a2-b352-e849835089ea"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>haxLKHWW45x9ax7cVUxZv2QFin5gg10ig7lLxPi/C7oSSDYLr2QW+2HtVEfo8so8ds2kFygbvrqP
-U5whc2/vrg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a476652d-7c8d-4ede-b0cc-8561de444ed1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6qB2avjmNZtV6ZlAwmul9B5t1R8N26niCchYOWE1pN2970ryZy5z/zhO5/z+TL1BJg8mRjDIFoEq
-o2GUI9HkeA==</DigestValue></Reference></SignedInfo><SignatureValue>OchRJjdGLGxMw81MLi93RL2VEzApPYvDsm9gmCQNj+7H21xlSYWPnZ8Pj+C+HCYGVfeBWaqv4oeh
-m0x7hO+Tkfsn9e2PmOe5F/A6wW2JCpadCFEJB1E2YIj3RQRjPqb/aKrtutVYc2h003KsHpfUoI4e
-2EU3fEHD11M4OmGdINDU2BP+zjOU+AUjPoWLDuUYLf4OObWDpcuUNlCoRd0+6wLX5uKAI6DSewtq
-K2znEZcK69hkjDpO3hlM6icbDPTT1N2ErP5TqFAPQSqCBRZmZKs0Xi6fS3p0yU0NQkIc0XoHIYf4
-NKPZmh/4484kymsM4stnF+0Ef866/WExbGXVSg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2237d695-2a02-4a6d-869d-80b0fd21ac83"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7t96ktTlpRFycDC53MGcrIlEd1kpo6pY+QW/mB47EyKHgJxV8ysaMY3EZbtyMQnKXbniUQDAok4F
+9gFydZOquQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_870c21bb-c54c-4283-ac05-707f05883739"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XWUl6VhWiQ8cDZGsqB7c/k9GlErlv1kIiwT2HX8AuCQcL+rXl876sRjf35MpYxPbor2vEilM+Jqd
+D4tJ7ugEdw==</DigestValue></Reference></SignedInfo><SignatureValue>mpVNG22BijjXHfuJ/xlRRMeFM9PKZVE/9zC6jpFBnAFUuWV19fEO+fzn+Xo6JXnFj5myFz6/Zh0T
+y//EDyIIncyi/4K01bV8hSaSYY1D9o0D0klFZFQDuoVlzoFZEgSkYHjxJVW7CXlHabzhHZN50V4C
+NsYvZrr3GtXctE8FyjPy9+ZwFeG7/qkvTQzNz0iqHQGnJltvigHFN5Xny/GdWpn7baclkLUIu30u
+rId4/FzPr6Rk5JtgWXOaDzwW8ysNlzzK6I2a0Mf/h634eZElUC9Di98APekAKPLfjqr5tXUPdKzv
+6eePB/Ei9F7BkvoVELVo+SmA4OLjiypr02zB3Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -1845,4 +1875,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a476652d-7c8d-4ede-b0cc-8561de444ed1" Target="#_e5dca331-f97d-42a2-b352-e849835089ea"><Timestamp>2020-07-02 03:30:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_870c21bb-c54c-4283-ac05-707f05883739" Target="#_2237d695-2a02-4a6d-869d-80b0fd21ac83"><Timestamp>2020-07-03 05:33:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
