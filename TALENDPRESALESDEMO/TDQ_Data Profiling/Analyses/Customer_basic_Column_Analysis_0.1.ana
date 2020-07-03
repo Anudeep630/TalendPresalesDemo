@@ -2,6 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
   <dataquality.analysis:Analysis xmi:id="__eef0HsQEeqCeJw2c1iDRA" name="Customer_basic_Column_Analysis" supplierDependency="_PG4isnsSEeqCeJw2c1iDRA" creationDate="2020-04-10T15:22:29.757+0530" defaultContext="Default">
     <clientDependency href="../../metadata/connections/MDM_Usecase_0.1.item#_JOouonNLEeq_kP4Tb2SfxA"/>
+    <clientDependency href="../../TDQ_Libraries/Patterns/SQL/sql_0.1.pattern#_PYZFB7zfEeq9Kq3Y28JzmQ"/>
     <taggedValue xmi:id="__eef0XsQEeqCeJw2c1iDRA" tag="Status" value="development"/>
     <taggedValue xmi:id="__eef0nsQEeqCeJw2c1iDRA" tag="Author" value="palem.varun@nfrthinkartha.com"/>
     <taggedValue xmi:id="__eef03sQEeqCeJw2c1iDRA" tag="Purpose" value=""/>
@@ -16,7 +17,7 @@
       <analysedElements xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
     </context>
     <results xmi:id="__eef13sQEeqCeJw2c1iDRA">
-      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:09:55.097+0530" executionDuration="358" message="For more information please refer to the Error Log view." executionNumber="25" lastExecutionNumberOk="21"/>
+      <resultMetadata xmi:id="__eef2HsQEeqCeJw2c1iDRA" executionDate="2020-07-03T09:12:40.439+0530" executionDuration="166" message="" executionNumber="26" lastRunOk="true" lastExecutionNumberOk="22"/>
       <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_KKAOZHsREeqCeJw2c1iDRA" count="6" nullCount="3" computed="true">
         <parameters xmi:id="_KKAOZXsREeqCeJw2c1iDRA"/>
         <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
@@ -98,6 +99,16 @@
           <sqlGenericExpression xmi:id="_Kb4olnsREeqCeJw2c1iDRA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>  WHERE LTRIM(RTRIM(&lt;%=__COLUMN_NAMES__%>)) = '' &lt;%=__AND_WHERE_CLAUSE__%>" language="Microsoft SQL Server"/>
           <sqlGenericExpression xmi:id="_Kb4ol3sREeqCeJw2c1iDRA" body="SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE (&lt;%=__COLUMN_NAMES__%> = '' or RTRIM(LTRIM(&lt;%=__COLUMN_NAMES__%>)) = '') &lt;%=__AND_WHERE_CLAUSE__%>" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
         </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:SqlPatternMatchingIndicator" xmi:id="_PYZFALzfEeq9Kq3Y28JzmQ" name="sql" count="6" computed="true" matchingValueCount="4" notMatchingValueCount="2">
+        <parameters xmi:id="_PYZFAbzfEeq9Kq3Y28JzmQ">
+          <dataValidDomain xmi:id="_PYZFArzfEeq9Kq3Y28JzmQ">
+            <patterns href="../../TDQ_Libraries/Patterns/SQL/sql_0.1.pattern#_IkGtwLzfEeq9Kq3Y28JzmQ"/>
+          </dataValidDomain>
+        </parameters>
+        <analyzedElement xsi:type="relational:TdColumn" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ4_nNHEeq_kP4Tb2SfxA"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Pattern Matching/SQL_Pattern_Matching_0.1.definition#_Z4vXcERgEd2RSqFSgXiIfA"/>
+        <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_Prr0cLzfEeq9Kq3Y28JzmQ" body="SELECT COUNT(CASE WHEN `NAME` LIKE '%@%' THEN 1 END), COUNT(*) FROM `mdm_usecase`.`customer`  WHERE (NAME like '%@%' or NAME like '%..%')" language="MySQL"/>
       </indicators>
     </results>
     <parameters xmi:id="__eef2XsQEeqCeJw2c1iDRA" dataFilter="_KKJ_YXsREeqCeJw2c1iDRA" analysisType="Multiple Column Analysis"/>

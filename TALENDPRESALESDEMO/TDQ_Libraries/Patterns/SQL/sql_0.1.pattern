@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataquality.domain.pattern:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmi:id="_IkGtwLzfEeq9Kq3Y28JzmQ" name="sql">
-  <taggedValue xmi:id="_IkGtwbzfEeq9Kq3Y28JzmQ" tag="Status" value="development"/>
-  <taggedValue xmi:id="_IkGtwrzfEeq9Kq3Y28JzmQ" tag="Author" value="user2@talend.com"/>
-  <taggedValue xmi:id="_IkGtw7zfEeq9Kq3Y28JzmQ" tag="Purpose"/>
-  <taggedValue xmi:id="_IkGtxLzfEeq9Kq3Y28JzmQ" tag="Description"/>
-  <taggedValue xmi:id="_IkGtxbzfEeq9Kq3Y28JzmQ" tag="Version" value="0.1"/>
-  <taggedValue xmi:id="_IkGtxrzfEeq9Kq3Y28JzmQ" tag="Validation_Status" value="true"/>
-  <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_IkGtx7zfEeq9Kq3Y28JzmQ" expressionType="SQL like">
-    <expression xmi:id="_IkGtyLzfEeq9Kq3Y28JzmQ" body="'%@%'" language="SQL"/>
-  </components>
-</dataquality.domain.pattern:Pattern>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain.pattern="http://dataquality.domain.pattern" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore">
+  <dataquality.domain.pattern:Pattern xmi:id="_IkGtwLzfEeq9Kq3Y28JzmQ" name="sql" supplierDependency="_PYZFB7zfEeq9Kq3Y28JzmQ">
+    <taggedValue xmi:id="_IkGtwbzfEeq9Kq3Y28JzmQ" tag="Status" value="development"/>
+    <taggedValue xmi:id="_IkGtwrzfEeq9Kq3Y28JzmQ" tag="Author" value="user2@talend.com"/>
+    <taggedValue xmi:id="_IkGtw7zfEeq9Kq3Y28JzmQ" tag="Purpose"/>
+    <taggedValue xmi:id="_IkGtxLzfEeq9Kq3Y28JzmQ" tag="Description"/>
+    <taggedValue xmi:id="_IkGtxbzfEeq9Kq3Y28JzmQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_IkGtxrzfEeq9Kq3Y28JzmQ" tag="Validation_Status" value="true"/>
+    <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_IkGtx7zfEeq9Kq3Y28JzmQ" expressionType="SQL like">
+      <expression xmi:id="_IkGtyLzfEeq9Kq3Y28JzmQ" body="'%@%'" language="SQL"/>
+    </components>
+  </dataquality.domain.pattern:Pattern>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_PYZFB7zfEeq9Kq3Y28JzmQ" kind="Usage" supplier="_IkGtwLzfEeq9Kq3Y28JzmQ">
+    <client xsi:type="dataquality.analysis:Analysis" href="../../../TDQ_Data Profiling/Analyses/Customer_basic_Column_Analysis_0.1.ana#__eef0HsQEeqCeJw2c1iDRA"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
+</xmi:XMI>
