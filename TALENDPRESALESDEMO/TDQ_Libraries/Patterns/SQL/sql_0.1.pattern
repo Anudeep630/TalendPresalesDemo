@@ -8,7 +8,7 @@
     <taggedValue xmi:id="_IkGtxbzfEeq9Kq3Y28JzmQ" tag="Version" value="0.1"/>
     <taggedValue xmi:id="_IkGtxrzfEeq9Kq3Y28JzmQ" tag="Validation_Status" value="true"/>
     <components xsi:type="dataquality.domain.pattern:RegularExpression" xmi:id="_IkGtx7zfEeq9Kq3Y28JzmQ" expressionType="SQL like">
-      <expression xmi:id="_IkGtyLzfEeq9Kq3Y28JzmQ" body="'%@#%'" language="SQL" modificationDate="2020-07-03 09:15:07"/>
+      <expression xmi:id="_IkGtyLzfEeq9Kq3Y28JzmQ" body="'%@%' or '%#%'" language="SQL" modificationDate="2020-07-03 09:15:46"/>
     </components>
   </dataquality.domain.pattern:Pattern>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_PYZFB7zfEeq9Kq3Y28JzmQ" kind="Usage" supplier="_IkGtwLzfEeq9Kq3Y28JzmQ">
