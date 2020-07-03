@@ -12,19 +12,21 @@
     <analysedElements xsi:type="relational:TdTable" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ48HNHEeq_kP4Tb2SfxA"/>
   </context>
   <results xmi:id="_aVJN17zcEeq9Kq3Y28JzmQ">
-    <resultMetadata xmi:id="_aVJN2LzcEeq9Kq3Y28JzmQ"/>
-    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_aVJN2bzcEeq9Kq3Y28JzmQ">
+    <resultMetadata xmi:id="_aVJN2LzcEeq9Kq3Y28JzmQ" executionDate="2020-07-03T08:52:41.723+0530" executionDuration="68" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+    <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_aVJN2bzcEeq9Kq3Y28JzmQ" count="2213" computed="true">
       <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ48HNHEeq_kP4Tb2SfxA"/>
       <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+      <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_dD2PwLzcEeq9Kq3Y28JzmQ" body="SELECT COUNT(*) FROM `mdm_usecase`.`customer` " language="MySQL"/>
       <builtInIndicatorDefinition xmi:id="_c72KULzcEeq9Kq3Y28JzmQ" name="Row Count" label="Row Count">
         <taggedValue xmi:id="_c72KUbzcEeq9Kq3Y28JzmQ" tag="Description" value="counts the number of rows"/>
         <taggedValue xmi:id="_c72KUrzcEeq9Kq3Y28JzmQ" tag="Purpose" value="evaluates the number of records"/>
         <sqlGenericExpression xmi:id="_c72KU7zcEeq9Kq3Y28JzmQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
       </builtInIndicatorDefinition>
     </indicators>
-    <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_aVJN2rzcEeq9Kq3Y28JzmQ">
+    <indicators xsi:type="dataquality.indicators.sql:WhereRuleIndicator" xmi:id="_aVJN2rzcEeq9Kq3Y28JzmQ" count="2213" computed="true" userCount="0">
       <analyzedElement xsi:type="relational:TdTable" href="../../metadata/connections/MDM_Usecase_0.1.item#_IWQ48HNHEeq_kP4Tb2SfxA"/>
       <indicatorDefinition href="../../TDQ_Libraries/Rules/SQL/Demo_DQ_Rule_0.1.rules#_hXIKcA-ZEd6qupbF9NyF4w"/>
+      <instantiatedExpressions xsi:type="relational:TdExpression" xmi:id="_dD2PwbzcEeq9Kq3Y28JzmQ" body="SELECT COUNT(*) FROM `mdm_usecase`.`customer`   WHERE (name like '%@#%')" language="MySQL"/>
       <builtInIndicatorDefinition xsi:type="dataquality.rules:WhereRule" xmi:id="_dDbZALzcEeq9Kq3Y28JzmQ" name="Demo DQ Rule" criticalityLevel="1" whereExpression="name like '%@#%'">
         <taggedValue xmi:id="_dDbZAbzcEeq9Kq3Y28JzmQ" tag="Author" value="palem.varun@nfrthinkartha.com"/>
         <taggedValue xmi:id="_dDbZArzcEeq9Kq3Y28JzmQ" tag="Description" value="demo"/>
