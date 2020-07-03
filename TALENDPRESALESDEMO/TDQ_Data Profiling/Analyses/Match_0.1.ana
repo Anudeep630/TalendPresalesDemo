@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.analysis:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.indicators.columnset="http://dataquality.indicators.columnset" xmi:id="_AZafELzxEeq9Kq3Y28JzmQ" name="Match" creationDate="2020-07-03T11:19:46.334+0530">
+  <taggedValue xmi:id="_AZafEbzxEeq9Kq3Y28JzmQ" tag="PREVIEW_ROW_NUMBER" value="10000"/>
+  <taggedValue xmi:id="_AZafErzxEeq9Kq3Y28JzmQ" tag="Status" value="development"/>
+  <taggedValue xmi:id="_AZafE7zxEeq9Kq3Y28JzmQ" tag="Author" value="user2@talend.com"/>
+  <taggedValue xmi:id="_AZafFLzxEeq9Kq3Y28JzmQ" tag="Purpose"/>
+  <taggedValue xmi:id="_AZafFbzxEeq9Kq3Y28JzmQ" tag="Description"/>
+  <taggedValue xmi:id="_AZafFrzxEeq9Kq3Y28JzmQ" tag="Version" value="0.1"/>
+  <context xmi:id="_AZafF7zxEeq9Kq3Y28JzmQ"/>
+  <results xmi:id="_AZafGLzxEeq9Kq3Y28JzmQ">
+    <resultMetadata xmi:id="_AZafGbzxEeq9Kq3Y28JzmQ"/>
+    <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_AZafGrzxEeq9Kq3Y28JzmQ"/>
+    <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_AZafG7zxEeq9Kq3Y28JzmQ">
+      <builtInMatchRuleDefinition xmi:id="_AZafHLzxEeq9Kq3Y28JzmQ"/>
+    </indicators>
+  </results>
+  <parameters xmi:id="_AZafHbzxEeq9Kq3Y28JzmQ" analysisType="Match Analysis"/>
+</dataquality.analysis:Analysis>
